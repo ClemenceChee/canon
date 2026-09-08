@@ -1,0 +1,229 @@
+{
+  "data": [
+    {
+      "id": "obs_charge_tool_10",
+      "traceId": "tr_charge_3",
+      "projectId": "prj-refunds",
+      "type": "TOOL",
+      "name": "charge-reversal",
+      "level": "ERROR",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_charge_agent_3",
+      "startTime": "2025-08-27T16:00:05.000Z",
+      "endTime": "2025-08-27T16:00:06.000Z",
+      "latency": 1000,
+      "version": "1.0.0",
+      "traceName": "chargeback_task",
+      "tags": [
+        "chargeback"
+      ],
+      "input": "reverse chg-5003",
+      "output": "rejected: insufficient funds",
+      "metadata": {},
+      "statusMessage": "bank rejected reversal"
+    },
+    {
+      "id": "obs_charge_tool_9",
+      "traceId": "tr_charge_3",
+      "projectId": "prj-refunds",
+      "type": "TOOL",
+      "name": "charge-lookup",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_charge_agent_3",
+      "startTime": "2025-08-27T16:00:02.000Z",
+      "endTime": "2025-08-27T16:00:04.000Z",
+      "latency": 2000,
+      "version": "1.0.0",
+      "traceName": "chargeback_task",
+      "tags": [
+        "chargeback"
+      ],
+      "input": "details chg-5003",
+      "output": "amount 320.00",
+      "metadata": {},
+      "statusMessage": ""
+    },
+    {
+      "id": "obs_charge_span_5",
+      "traceId": "tr_charge_3",
+      "projectId": "prj-refunds",
+      "type": "SPAN",
+      "name": "ledger-lookup",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_charge_agent_3",
+      "startTime": "2025-08-27T16:00:01.000Z",
+      "endTime": "2025-08-27T16:00:02.000Z",
+      "latency": 1000,
+      "version": "1.0.0",
+      "traceName": "chargeback_task",
+      "tags": [
+        "chargeback"
+      ],
+      "input": "lookup chg-5003",
+      "output": "found",
+      "metadata": {},
+      "statusMessage": ""
+    },
+    {
+      "id": "obs_charge_agent_3",
+      "traceId": "tr_charge_3",
+      "projectId": "prj-refunds",
+      "type": "AGENT",
+      "name": "chargeback-agent",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": true,
+      "parentObservationId": null,
+      "startTime": "2025-08-27T16:00:00.000Z",
+      "endTime": "2025-08-27T16:00:20.000Z",
+      "latency": 20000,
+      "version": "1.0.0",
+      "traceName": "chargeback_task",
+      "tags": [
+        "chargeback"
+      ],
+      "input": "Handle chargeback cb-5003 — bank rejected first reversal.",
+      "output": "Retried reversal after bank rejection.",
+      "metadata": {},
+      "statusMessage": "",
+      "sessionId": "sess_charge_3",
+      "userId": "user_63"
+    },
+    {
+      "id": "obs_charge_span_7c",
+      "traceId": "tr_charge_4",
+      "projectId": "prj-refunds",
+      "type": "SPAN",
+      "name": "audit-trail",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_charge_agent_4",
+      "startTime": "2025-08-27T08:30:21.000Z",
+      "endTime": "2025-08-27T08:30:22.000Z",
+      "latency": 1000,
+      "version": "1.0.0",
+      "traceName": "chargeback_task",
+      "tags": [
+        "chargeback"
+      ],
+      "input": "record audit trail",
+      "output": "recorded",
+      "metadata": {},
+      "statusMessage": ""
+    },
+    {
+      "id": "obs_charge_tool_17",
+      "traceId": "tr_charge_4",
+      "projectId": "prj-refunds",
+      "type": "TOOL",
+      "name": "notify-bank",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_charge_agent_4",
+      "startTime": "2025-08-27T08:30:20.000Z",
+      "endTime": "2025-08-27T08:30:21.000Z",
+      "latency": 1000,
+      "version": "1.0.0",
+      "traceName": "chargeback_task",
+      "tags": [
+        "chargeback"
+      ],
+      "input": "notify bank",
+      "output": "notified",
+      "metadata": {},
+      "statusMessage": ""
+    },
+    {
+      "id": "obs_charge_gen_6b",
+      "traceId": "tr_charge_4",
+      "projectId": "prj-refunds",
+      "type": "GENERATION",
+      "name": "bank-followup",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_charge_agent_4",
+      "startTime": "2025-08-27T08:30:18.000Z",
+      "endTime": "2025-08-27T08:30:19.000Z",
+      "latency": 1000,
+      "version": "1.0.0",
+      "traceName": "chargeback_task",
+      "tags": [
+        "chargeback"
+      ],
+      "input": "Draft bank followup",
+      "output": "Followup drafted.",
+      "metadata": {},
+      "statusMessage": "",
+      "model": "gpt-4o",
+      "internalModelId": "gpt-4o-2024-08-06",
+      "modelParameters": {
+        "temperature": 0.2
+      },
+      "inputPrice": "0.002500",
+      "outputPrice": "0.010000",
+      "totalPrice": "0.012500",
+      "usageDetails": {
+        "input": 900,
+        "output": 250,
+        "total": 1150
+      },
+      "costDetails": {
+        "input": 0.00225,
+        "output": 0.0025,
+        "total": 0.00475
+      }
+    },
+    {
+      "id": "obs_charge_gen_6",
+      "traceId": "tr_charge_4",
+      "projectId": "prj-refunds",
+      "type": "GENERATION",
+      "name": "case-notes",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_charge_agent_4",
+      "startTime": "2025-08-27T08:30:16.000Z",
+      "endTime": "2025-08-27T08:30:18.000Z",
+      "latency": 2000,
+      "version": "1.0.0",
+      "traceName": "chargeback_task",
+      "tags": [
+        "chargeback"
+      ],
+      "input": "Write case notes",
+      "output": "Notes saved.",
+      "metadata": {},
+      "statusMessage": "",
+      "model": "gpt-4o",
+      "internalModelId": "gpt-4o-2024-08-06",
+      "modelParameters": {
+        "temperature": 0.2
+      },
+      "inputPrice": "0.002500",
+      "outputPrice": "0.010000",
+      "totalPrice": "0.012500",
+      "usageDetails": {
+        "input": 900,
+        "output": 250,
+        "total": 1150
+      },
+      "costDetails": {
+        "input": 0.00225,
+        "output": 0.0025,
+        "total": 0.00475
+      }
+    }
+  ],
+  "meta": {
+    "cursor": "cursor-obs-22"
+  }
+}

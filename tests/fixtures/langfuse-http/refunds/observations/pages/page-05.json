@@ -1,0 +1,211 @@
+{
+  "data": [
+    {
+      "id": "obs_refund_tool_7",
+      "traceId": "tr_refund_4",
+      "projectId": "prj-refunds",
+      "type": "TOOL",
+      "name": "charge-reversal",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_refund_agent_4",
+      "startTime": "2025-08-31T15:30:02.000Z",
+      "endTime": "2025-08-31T15:30:03.000Z",
+      "latency": 1000,
+      "version": "1.0.0",
+      "traceName": "refund_task",
+      "tags": [
+        "refund"
+      ],
+      "input": "reverse charge chg-881",
+      "output": "no response",
+      "metadata": {},
+      "statusMessage": ""
+    },
+    {
+      "id": "obs_refund_span_5",
+      "traceId": "tr_refund_4",
+      "projectId": "prj-refunds",
+      "type": "SPAN",
+      "name": "gateway-timeout",
+      "level": "WARN",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_refund_agent_4",
+      "startTime": "2025-08-31T15:30:02.000Z",
+      "endTime": "2025-08-31T15:30:07.000Z",
+      "latency": 5000,
+      "version": "1.0.0",
+      "traceName": "refund_task",
+      "tags": [
+        "refund"
+      ],
+      "input": "watch charge gateway call",
+      "output": "caller timeout observed",
+      "metadata": {},
+      "statusMessage": "charge gateway timeout"
+    },
+    {
+      "id": "obs_refund_agent_4",
+      "traceId": "tr_refund_4",
+      "projectId": "prj-refunds",
+      "type": "AGENT",
+      "name": "refund-agent",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": true,
+      "parentObservationId": null,
+      "startTime": "2025-08-31T15:30:00.000Z",
+      "endTime": "2025-08-31T15:30:14.000Z",
+      "latency": 14000,
+      "version": "1.0.0",
+      "traceName": "refund_task",
+      "tags": [
+        "refund"
+      ],
+      "input": "Refund order R-1004; the charge gateway timed out once.",
+      "output": "Reversed the charge twice after the timeout.",
+      "metadata": {},
+      "statusMessage": "",
+      "sessionId": "sess_refund_4",
+      "userId": "user_7"
+    },
+    {
+      "id": "obs_support_span_1",
+      "traceId": "tr_refund_5",
+      "projectId": "prj-refunds",
+      "type": "SPAN",
+      "name": "verify-credit",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_support_agent_1",
+      "startTime": "2025-08-31T12:45:12.000Z",
+      "endTime": "2025-08-31T12:45:14.000Z",
+      "latency": 2000,
+      "version": "1.0.0",
+      "traceName": "refund_task",
+      "tags": [
+        "refund"
+      ],
+      "input": "verify credit posted",
+      "output": "posted",
+      "metadata": {},
+      "statusMessage": ""
+    },
+    {
+      "id": "obs_support_gen_1",
+      "traceId": "tr_refund_5",
+      "projectId": "prj-refunds",
+      "type": "GENERATION",
+      "name": "refund-summary",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_support_agent_1",
+      "startTime": "2025-08-31T12:45:07.000Z",
+      "endTime": "2025-08-31T12:45:09.000Z",
+      "latency": 2000,
+      "version": "1.0.0",
+      "traceName": "refund_task",
+      "tags": [
+        "refund"
+      ],
+      "input": "Summarise quick refund R-1005",
+      "output": "Instant credit issued.",
+      "metadata": {},
+      "statusMessage": "",
+      "model": "gpt-4o-mini",
+      "internalModelId": "gpt-4o-mini-2024-07-18",
+      "modelParameters": {
+        "temperature": 0.2
+      },
+      "inputPrice": "0.000150",
+      "outputPrice": "0.000600",
+      "totalPrice": "0.000750",
+      "usageDetails": {
+        "input": 800,
+        "output": 220,
+        "total": 1020
+      },
+      "costDetails": {
+        "input": 0.00012,
+        "output": 0.000132,
+        "total": 0.000252
+      }
+    },
+    {
+      "id": "obs_support_tool_2",
+      "traceId": "tr_refund_5",
+      "projectId": "prj-refunds",
+      "type": "TOOL",
+      "name": "lookup-customer",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_support_agent_1",
+      "startTime": "2025-08-31T12:45:05.000Z",
+      "endTime": "2025-08-31T12:45:06.000Z",
+      "latency": 1000,
+      "version": "1.0.0",
+      "traceName": "refund_task",
+      "tags": [
+        "refund"
+      ],
+      "input": "customer 9 account",
+      "output": "account found",
+      "metadata": {},
+      "statusMessage": ""
+    },
+    {
+      "id": "obs_support_tool_1",
+      "traceId": "tr_refund_5",
+      "projectId": "prj-refunds",
+      "type": "TOOL",
+      "name": "refund-quick",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_support_agent_1",
+      "startTime": "2025-08-31T12:45:02.000Z",
+      "endTime": "2025-08-31T12:45:04.000Z",
+      "latency": 2000,
+      "version": "1.0.0",
+      "traceName": "refund_task",
+      "tags": [
+        "refund"
+      ],
+      "input": "quick credit R-1005 amount 25.00",
+      "output": "credited (id qc_19)",
+      "metadata": {},
+      "statusMessage": ""
+    },
+    {
+      "id": "obs_support_span_1b",
+      "traceId": "tr_refund_5",
+      "projectId": "prj-refunds",
+      "type": "SPAN",
+      "name": "policy-lookup",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_support_agent_1",
+      "startTime": "2025-08-31T12:45:01.000Z",
+      "endTime": "2025-08-31T12:45:02.000Z",
+      "latency": 1000,
+      "version": "1.0.0",
+      "traceName": "refund_task",
+      "tags": [
+        "refund"
+      ],
+      "input": "lookup quick-refund policy",
+      "output": "policy v2 found",
+      "metadata": {},
+      "statusMessage": ""
+    }
+  ],
+  "meta": {
+    "cursor": "cursor-obs-5"
+  }
+}

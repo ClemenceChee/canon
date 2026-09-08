@@ -1,0 +1,136 @@
+{
+  "data": [
+    {
+      "id": "score_obs_2",
+      "projectId": "prj-refunds",
+      "traceId": "tr_dispute_5",
+      "name": "evidence-quality",
+      "dataType": "BOOLEAN",
+      "value": false,
+      "source": "ANNOTATION",
+      "authorUserId": "reviewer@acme",
+      "timestamp": "2025-08-29T09:45:00.000Z",
+      "environment": "production",
+      "subject": {
+        "kind": "OBSERVATION",
+        "id": "obs_dispute_tool_14",
+        "traceId": "tr_dispute_5"
+      }
+    },
+    {
+      "id": "score_dispute_7",
+      "projectId": "prj-refunds",
+      "traceId": "tr_dispute_7",
+      "name": "dispute-outcome",
+      "dataType": "NUMERIC",
+      "value": 1,
+      "source": "EVAL",
+      "timestamp": "2025-08-29T06:20:00.000Z",
+      "environment": "production",
+      "subject": {
+        "kind": "TRACE",
+        "id": "tr_dispute_7",
+        "traceId": "tr_dispute_7"
+      }
+    },
+    {
+      "id": "score_charge_1",
+      "projectId": "prj-refunds",
+      "traceId": "tr_charge_1",
+      "name": "chargeback-outcome",
+      "dataType": "NUMERIC",
+      "value": 1,
+      "source": "EVAL",
+      "timestamp": "2025-08-28T19:30:00.000Z",
+      "environment": "production",
+      "subject": {
+        "kind": "TRACE",
+        "id": "tr_charge_1",
+        "traceId": "tr_charge_1"
+      }
+    },
+    {
+      "id": "score_dispute_6",
+      "projectId": "prj-refunds",
+      "traceId": "tr_dispute_6",
+      "name": "dispute-outcome",
+      "dataType": "NUMERIC",
+      "value": 1,
+      "source": "EVAL",
+      "timestamp": "2025-08-28T14:20:00.000Z",
+      "environment": "production",
+      "subject": {
+        "kind": "TRACE",
+        "id": "tr_dispute_6",
+        "traceId": "tr_dispute_6"
+      }
+    },
+    {
+      "id": "score_charge_2",
+      "projectId": "prj-refunds",
+      "traceId": "tr_charge_2",
+      "name": "chargeback-outcome",
+      "dataType": "NUMERIC",
+      "value": 1,
+      "source": "EVAL",
+      "timestamp": "2025-08-28T11:00:00.000Z",
+      "environment": "production",
+      "subject": {
+        "kind": "TRACE",
+        "id": "tr_charge_2",
+        "traceId": "tr_charge_2"
+      }
+    },
+    {
+      "id": "score_charge_3",
+      "projectId": "prj-refunds",
+      "traceId": "tr_charge_3",
+      "name": "chargeback-outcome",
+      "dataType": "NUMERIC",
+      "value": 1,
+      "source": "EVAL",
+      "timestamp": "2025-08-27T16:30:00.000Z",
+      "environment": "production",
+      "subject": {
+        "kind": "TRACE",
+        "id": "tr_charge_3",
+        "traceId": "tr_charge_3"
+      }
+    },
+    {
+      "id": "score_obs_3",
+      "projectId": "prj-refunds",
+      "traceId": "tr_charge_3",
+      "name": "reversal-accuracy",
+      "dataType": "BOOLEAN",
+      "value": true,
+      "source": "EVAL",
+      "timestamp": "2025-08-27T16:20:00.000Z",
+      "environment": "production",
+      "subject": {
+        "kind": "OBSERVATION",
+        "id": "obs_charge_tool_11",
+        "traceId": "tr_charge_3"
+      }
+    },
+    {
+      "id": "score_charge_4",
+      "projectId": "prj-refunds",
+      "traceId": "tr_charge_4",
+      "name": "chargeback-outcome",
+      "dataType": "NUMERIC",
+      "value": 1,
+      "source": "EVAL",
+      "timestamp": "2025-08-27T09:00:00.000Z",
+      "environment": "production",
+      "subject": {
+        "kind": "TRACE",
+        "id": "tr_charge_4",
+        "traceId": "tr_charge_4"
+      }
+    }
+  ],
+  "meta": {
+    "cursor": "cursor-scores-4"
+  }
+}

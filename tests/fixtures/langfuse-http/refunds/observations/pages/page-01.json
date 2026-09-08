@@ -1,0 +1,230 @@
+{
+  "data": [
+    {
+      "id": "obs_refund_gen_1",
+      "traceId": "tr_refund_1",
+      "projectId": "prj-refunds",
+      "type": "GENERATION",
+      "name": "refund-summary",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_refund_agent_1",
+      "startTime": "2025-08-31T23:20:06.000Z",
+      "endTime": "2025-08-31T23:20:08.000Z",
+      "latency": 2000,
+      "version": "1.0.0",
+      "traceName": "refund_task",
+      "tags": [
+        "refund"
+      ],
+      "input": "Summarise refund R-1001 outcome",
+      "output": "Refund issued to customer via standard flow.",
+      "metadata": {},
+      "statusMessage": "",
+      "model": "gpt-4o-mini",
+      "internalModelId": "gpt-4o-mini-2024-07-18",
+      "modelParameters": {
+        "temperature": 0.2
+      },
+      "inputPrice": "0.000150",
+      "outputPrice": "0.000600",
+      "totalPrice": "0.000750",
+      "usageDetails": {
+        "input": 800,
+        "output": 220,
+        "total": 1020
+      },
+      "costDetails": {
+        "input": 0.00012,
+        "output": 0.000132,
+        "total": 0.000252
+      }
+    },
+    {
+      "id": "obs_refund_tool_1",
+      "traceId": "tr_refund_1",
+      "projectId": "prj-refunds",
+      "type": "TOOL",
+      "name": "refund-standard",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_refund_agent_1",
+      "startTime": "2025-08-31T23:20:02.000Z",
+      "endTime": "2025-08-31T23:20:05.000Z",
+      "latency": 3000,
+      "version": "1.0.0",
+      "traceName": "refund_task",
+      "tags": [
+        "refund"
+      ],
+      "input": "Refund order R-1001, amount 49.99",
+      "output": "Refund accepted (id rfnd_991)",
+      "metadata": {},
+      "statusMessage": ""
+    },
+    {
+      "id": "obs_refund_span_1",
+      "traceId": "tr_refund_1",
+      "projectId": "prj-refunds",
+      "type": "SPAN",
+      "name": "eligibility-check",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_refund_agent_1",
+      "startTime": "2025-08-31T23:20:01.000Z",
+      "endTime": "2025-08-31T23:20:02.000Z",
+      "latency": 1000,
+      "version": "1.0.0",
+      "traceName": "refund_task",
+      "tags": [
+        "refund"
+      ],
+      "input": "order R-1001 eligibility",
+      "output": "eligible",
+      "metadata": {},
+      "statusMessage": ""
+    },
+    {
+      "id": "obs_refund_agent_1",
+      "traceId": "tr_refund_1",
+      "projectId": "prj-refunds",
+      "type": "AGENT",
+      "name": "refund-agent",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": true,
+      "parentObservationId": null,
+      "startTime": "2025-08-31T23:20:00.000Z",
+      "endTime": "2025-08-31T23:20:12.000Z",
+      "latency": 12000,
+      "version": "1.0.0",
+      "traceName": "refund_task",
+      "tags": [
+        "refund"
+      ],
+      "input": "Refund order R-1001 for customer who never received it.",
+      "output": "Selected tool refund-standard and issued refund.",
+      "metadata": {},
+      "statusMessage": "",
+      "sessionId": "sess_refund_1",
+      "userId": "user_42",
+      "samplingWeight": 0.5
+    },
+    {
+      "id": "obs_refund_span_3",
+      "traceId": "tr_refund_2",
+      "projectId": "prj-refunds",
+      "type": "SPAN",
+      "name": "replacement-label",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_refund_agent_2",
+      "startTime": "2025-08-31T21:10:12.000Z",
+      "endTime": "2025-08-31T21:10:14.000Z",
+      "latency": 2000,
+      "version": "1.0.0",
+      "traceName": "refund_task",
+      "tags": [
+        "refund"
+      ],
+      "input": "print replacement label",
+      "output": "label emailed",
+      "metadata": {},
+      "statusMessage": ""
+    },
+    {
+      "id": "obs_refund_span_2b",
+      "traceId": "tr_refund_2",
+      "projectId": "prj-refunds",
+      "type": "SPAN",
+      "name": "post-refund-check",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_refund_agent_2",
+      "startTime": "2025-08-31T21:10:11.000Z",
+      "endTime": "2025-08-31T21:10:12.000Z",
+      "latency": 1000,
+      "version": "1.0.0",
+      "traceName": "refund_task",
+      "tags": [
+        "refund"
+      ],
+      "input": "verify refund posted",
+      "output": "posted",
+      "metadata": {},
+      "statusMessage": ""
+    },
+    {
+      "id": "obs_refund_gen_2",
+      "traceId": "tr_refund_2",
+      "projectId": "prj-refunds",
+      "type": "GENERATION",
+      "name": "refund-summary",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_refund_agent_2",
+      "startTime": "2025-08-31T21:10:09.000Z",
+      "endTime": "2025-08-31T21:10:11.000Z",
+      "latency": 2000,
+      "version": "1.0.0",
+      "traceName": "refund_task",
+      "tags": [
+        "refund"
+      ],
+      "input": "Summarise R-1002 partial refund",
+      "output": "Partial refund of 89.95 issued.",
+      "metadata": {},
+      "statusMessage": "",
+      "model": "gpt-4o-mini",
+      "internalModelId": "gpt-4o-mini-2024-07-18",
+      "modelParameters": {
+        "temperature": 0.2
+      },
+      "inputPrice": "0.000150",
+      "outputPrice": "0.000600",
+      "totalPrice": "0.000750",
+      "usageDetails": {
+        "input": 800,
+        "output": 220,
+        "total": 1020
+      },
+      "costDetails": {
+        "input": 0.00012,
+        "output": 0.000132,
+        "total": 0.000252
+      }
+    },
+    {
+      "id": "obs_refund_tool_3",
+      "traceId": "tr_refund_2",
+      "projectId": "prj-refunds",
+      "type": "TOOL",
+      "name": "refund-standard",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_refund_agent_2",
+      "startTime": "2025-08-31T21:10:05.000Z",
+      "endTime": "2025-08-31T21:10:08.000Z",
+      "latency": 3000,
+      "version": "1.0.0",
+      "traceName": "refund_task",
+      "tags": [
+        "refund"
+      ],
+      "input": "Refund order R-1002, amount 89.95",
+      "output": "Refund accepted (id rfnd_992)",
+      "metadata": {},
+      "statusMessage": ""
+    }
+  ],
+  "meta": {
+    "cursor": "cursor-obs-1"
+  }
+}

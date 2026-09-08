@@ -1,0 +1,229 @@
+{
+  "data": [
+    {
+      "id": "obs_dsp7_gen_d",
+      "traceId": "tr_dispute_7",
+      "projectId": "prj-refunds",
+      "type": "GENERATION",
+      "name": "decision-letter",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_dsp7_agent",
+      "startTime": "2025-08-29T06:00:16.000Z",
+      "endTime": "2025-08-29T06:00:18.000Z",
+      "latency": 2000,
+      "version": "1.0.0",
+      "traceName": "dispute_task",
+      "tags": [
+        "dispute"
+      ],
+      "input": "Draft decision ds-6007",
+      "output": "Decision letter drafted.",
+      "metadata": {},
+      "statusMessage": "",
+      "model": "gpt-4o",
+      "internalModelId": "gpt-4o-2024-08-06",
+      "modelParameters": {
+        "temperature": 0.2
+      },
+      "inputPrice": "0.002500",
+      "outputPrice": "0.010000",
+      "totalPrice": "0.012500",
+      "usageDetails": {
+        "input": 900,
+        "output": 250,
+        "total": 1150
+      },
+      "costDetails": {
+        "input": 0.00225,
+        "output": 0.0025,
+        "total": 0.00475
+      }
+    },
+    {
+      "id": "obs_dsp7_tool_c",
+      "traceId": "tr_dispute_7",
+      "projectId": "prj-refunds",
+      "type": "TOOL",
+      "name": "dispute-check",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_dsp7_agent",
+      "startTime": "2025-08-29T06:00:13.000Z",
+      "endTime": "2025-08-29T06:00:15.000Z",
+      "latency": 2000,
+      "version": "1.0.0",
+      "traceName": "dispute_task",
+      "tags": [
+        "dispute"
+      ],
+      "input": "assess evidence ds-6007",
+      "output": "evidence ok",
+      "metadata": {},
+      "statusMessage": ""
+    },
+    {
+      "id": "obs_dsp7_tool_e",
+      "traceId": "tr_dispute_7",
+      "projectId": "prj-refunds",
+      "type": "TOOL",
+      "name": "evidence-upload",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_dsp7_agent",
+      "startTime": "2025-08-29T06:00:10.000Z",
+      "endTime": "2025-08-29T06:00:12.000Z",
+      "latency": 2000,
+      "version": "1.0.0",
+      "traceName": "dispute_task",
+      "tags": [
+        "dispute"
+      ],
+      "input": "upload evidence ds-6007",
+      "output": "evidence filed",
+      "metadata": {},
+      "statusMessage": ""
+    },
+    {
+      "id": "obs_dsp7_gen_s",
+      "traceId": "tr_dispute_7",
+      "projectId": "prj-refunds",
+      "type": "GENERATION",
+      "name": "dispute-summary",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_dsp7_agent",
+      "startTime": "2025-08-29T06:00:06.000Z",
+      "endTime": "2025-08-29T06:00:08.000Z",
+      "latency": 2000,
+      "version": "1.0.0",
+      "traceName": "dispute_task",
+      "tags": [
+        "dispute"
+      ],
+      "input": "Summarise dispute ds-6007",
+      "output": "Summary written.",
+      "metadata": {},
+      "statusMessage": "",
+      "model": "gpt-4o",
+      "internalModelId": "gpt-4o-2024-08-06",
+      "modelParameters": {
+        "temperature": 0.2
+      },
+      "inputPrice": "0.002500",
+      "outputPrice": "0.010000",
+      "totalPrice": "0.012500",
+      "usageDetails": {
+        "input": 900,
+        "output": 250,
+        "total": 1150
+      },
+      "costDetails": {
+        "input": 0.00225,
+        "output": 0.0025,
+        "total": 0.00475
+      }
+    },
+    {
+      "id": "obs_dsp7_tool_o",
+      "traceId": "tr_dispute_7",
+      "projectId": "prj-refunds",
+      "type": "TOOL",
+      "name": "dispute-open",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_dsp7_agent",
+      "startTime": "2025-08-29T06:00:03.000Z",
+      "endTime": "2025-08-29T06:00:05.000Z",
+      "latency": 2000,
+      "version": "1.0.0",
+      "traceName": "dispute_task",
+      "tags": [
+        "dispute"
+      ],
+      "input": "open dispute ds-6007",
+      "output": "docket D-6007",
+      "metadata": {},
+      "statusMessage": ""
+    },
+    {
+      "id": "obs_dsp7_span_p",
+      "traceId": "tr_dispute_7",
+      "projectId": "prj-refunds",
+      "type": "SPAN",
+      "name": "policy-lookup",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_dsp7_agent",
+      "startTime": "2025-08-29T06:00:01.000Z",
+      "endTime": "2025-08-29T06:00:02.000Z",
+      "latency": 1000,
+      "version": "1.0.0",
+      "traceName": "dispute_task",
+      "tags": [
+        "dispute"
+      ],
+      "input": "read policy for dispute ds-6007",
+      "output": "policy ok",
+      "metadata": {},
+      "statusMessage": ""
+    },
+    {
+      "id": "obs_dsp7_agent",
+      "traceId": "tr_dispute_7",
+      "projectId": "prj-refunds",
+      "type": "AGENT",
+      "name": "dispute-agent",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": true,
+      "parentObservationId": null,
+      "startTime": "2025-08-29T06:00:00.000Z",
+      "endTime": "2025-08-29T06:00:21.000Z",
+      "latency": 21000,
+      "version": "1.0.0",
+      "traceName": "dispute_task",
+      "tags": [
+        "dispute"
+      ],
+      "input": "Handle dispute ds-6007.",
+      "output": "Dispute processed.",
+      "metadata": {},
+      "statusMessage": "",
+      "sessionId": "sess_dispute_7",
+      "userId": "user_80"
+    },
+    {
+      "id": "obs_charge_span_2",
+      "traceId": "tr_charge_1",
+      "projectId": "prj-refunds",
+      "type": "SPAN",
+      "name": "audit-trail",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_charge_agent_1",
+      "startTime": "2025-08-28T19:00:20.000Z",
+      "endTime": "2025-08-28T19:00:22.000Z",
+      "latency": 2000,
+      "version": "1.0.0",
+      "traceName": "chargeback_task",
+      "tags": [
+        "chargeback"
+      ],
+      "input": "record audit trail",
+      "output": "recorded",
+      "metadata": {},
+      "statusMessage": ""
+    }
+  ],
+  "meta": {
+    "cursor": "cursor-obs-17"
+  }
+}

@@ -1,0 +1,229 @@
+{
+  "data": [
+    {
+      "id": "obs_dispute_gen_3",
+      "traceId": "tr_dispute_2",
+      "projectId": "prj-refunds",
+      "type": "GENERATION",
+      "name": "dispute-summary",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_dispute_agent_2",
+      "startTime": "2025-08-30T16:40:10.000Z",
+      "endTime": "2025-08-30T16:40:13.000Z",
+      "latency": 3000,
+      "version": "1.0.0",
+      "traceName": "dispute_task",
+      "tags": [
+        "dispute"
+      ],
+      "input": "Summarise R-2002 timeline",
+      "output": "Timeline written.",
+      "metadata": {},
+      "statusMessage": "",
+      "model": "gpt-4o",
+      "internalModelId": "gpt-4o-2024-08-06",
+      "modelParameters": {
+        "temperature": 0.2
+      },
+      "inputPrice": "0.002500",
+      "outputPrice": "0.010000",
+      "totalPrice": "0.012500",
+      "usageDetails": {
+        "input": 900,
+        "output": 250,
+        "total": 1150
+      },
+      "costDetails": {
+        "input": 0.00225,
+        "output": 0.0025,
+        "total": 0.00475
+      }
+    },
+    {
+      "id": "obs_dispute_tool_5",
+      "traceId": "tr_dispute_2",
+      "projectId": "prj-refunds",
+      "type": "TOOL",
+      "name": "evidence-upload",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_dispute_agent_2",
+      "startTime": "2025-08-30T16:40:07.000Z",
+      "endTime": "2025-08-30T16:40:09.000Z",
+      "latency": 2000,
+      "version": "1.0.0",
+      "traceName": "dispute_task",
+      "tags": [
+        "dispute"
+      ],
+      "input": "upload damage photos",
+      "output": "4 documents uploaded",
+      "metadata": {},
+      "statusMessage": ""
+    },
+    {
+      "id": "obs_dispute_tool_4",
+      "traceId": "tr_dispute_2",
+      "projectId": "prj-refunds",
+      "type": "TOOL",
+      "name": "dispute-open",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_dispute_agent_2",
+      "startTime": "2025-08-30T16:40:03.000Z",
+      "endTime": "2025-08-30T16:40:06.000Z",
+      "latency": 3000,
+      "version": "1.0.0",
+      "traceName": "dispute_task",
+      "tags": [
+        "dispute"
+      ],
+      "input": "open dispute R-2002 reason: damaged",
+      "output": "dispute dp-102 opened",
+      "metadata": {},
+      "statusMessage": ""
+    },
+    {
+      "id": "obs_dispute_span_2",
+      "traceId": "tr_dispute_2",
+      "projectId": "prj-refunds",
+      "type": "SPAN",
+      "name": "policy-lookup",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_dispute_agent_2",
+      "startTime": "2025-08-30T16:40:01.000Z",
+      "endTime": "2025-08-30T16:40:02.000Z",
+      "latency": 1000,
+      "version": "1.0.0",
+      "traceName": "dispute_task",
+      "tags": [
+        "dispute"
+      ],
+      "input": "lookup damage policy",
+      "output": "policy v3 found",
+      "metadata": {},
+      "statusMessage": ""
+    },
+    {
+      "id": "obs_dispute_agent_2",
+      "traceId": "tr_dispute_2",
+      "projectId": "prj-refunds",
+      "type": "AGENT",
+      "name": "dispute-agent",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": true,
+      "parentObservationId": null,
+      "startTime": "2025-08-30T16:40:00.000Z",
+      "endTime": "2025-08-30T16:40:21.000Z",
+      "latency": 21000,
+      "version": "1.0.0",
+      "traceName": "dispute_task",
+      "tags": [
+        "dispute"
+      ],
+      "input": "Dispute R-2002 — item arrived damaged.",
+      "output": "Dispute won on evidence.",
+      "metadata": {},
+      "statusMessage": "",
+      "sessionId": "sess_dispute_2",
+      "userId": "user_52"
+    },
+    {
+      "id": "obs_dispute_span_4b",
+      "traceId": "tr_dispute_3",
+      "projectId": "prj-refunds",
+      "type": "SPAN",
+      "name": "case-log",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_dispute_agent_3",
+      "startTime": "2025-08-30T11:20:16.000Z",
+      "endTime": "2025-08-30T11:20:17.000Z",
+      "latency": 1000,
+      "version": "1.0.0",
+      "traceName": "dispute_task",
+      "tags": [
+        "dispute"
+      ],
+      "input": "append case log",
+      "output": "logged",
+      "metadata": {},
+      "statusMessage": ""
+    },
+    {
+      "id": "obs_dispute_tool_9",
+      "traceId": "tr_dispute_3",
+      "projectId": "prj-refunds",
+      "type": "TOOL",
+      "name": "dispute-check",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_dispute_agent_3",
+      "startTime": "2025-08-30T11:20:15.000Z",
+      "endTime": "2025-08-30T11:20:16.000Z",
+      "latency": 1000,
+      "version": "1.0.0",
+      "traceName": "dispute_task",
+      "tags": [
+        "dispute"
+      ],
+      "input": "check dispute status",
+      "output": "in review",
+      "metadata": {},
+      "statusMessage": ""
+    },
+    {
+      "id": "obs_dispute_gen_6",
+      "traceId": "tr_dispute_3",
+      "projectId": "prj-refunds",
+      "type": "GENERATION",
+      "name": "decision-letter",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_dispute_agent_3",
+      "startTime": "2025-08-30T11:20:12.000Z",
+      "endTime": "2025-08-30T11:20:14.000Z",
+      "latency": 2000,
+      "version": "1.0.0",
+      "traceName": "dispute_task",
+      "tags": [
+        "dispute"
+      ],
+      "input": "Draft decision letter",
+      "output": "Letter drafted.",
+      "metadata": {},
+      "statusMessage": "",
+      "model": "gpt-4o-mini",
+      "internalModelId": "gpt-4o-mini-2024-07-18",
+      "modelParameters": {
+        "temperature": 0.2
+      },
+      "inputPrice": "0.000150",
+      "outputPrice": "0.000600",
+      "totalPrice": "0.000750",
+      "usageDetails": {
+        "input": 800,
+        "output": 220,
+        "total": 1020
+      },
+      "costDetails": {
+        "input": 0.00012,
+        "output": 0.000132,
+        "total": 0.000252
+      }
+    }
+  ],
+  "meta": {
+    "cursor": "cursor-obs-11"
+  }
+}

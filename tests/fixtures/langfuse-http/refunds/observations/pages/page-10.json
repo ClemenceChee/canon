@@ -1,0 +1,211 @@
+{
+  "data": [
+    {
+      "id": "obs_dispute_span_1b",
+      "traceId": "tr_dispute_1",
+      "projectId": "prj-refunds",
+      "type": "SPAN",
+      "name": "evidence-validation",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_dispute_agent_1",
+      "startTime": "2025-08-30T20:00:08.000Z",
+      "endTime": "2025-08-30T20:00:09.000Z",
+      "latency": 1000,
+      "version": "1.0.0",
+      "traceName": "dispute_task",
+      "tags": [
+        "dispute"
+      ],
+      "input": "validate uploaded proof",
+      "output": "valid",
+      "metadata": {},
+      "statusMessage": ""
+    },
+    {
+      "id": "obs_dispute_tool_2",
+      "traceId": "tr_dispute_1",
+      "projectId": "prj-refunds",
+      "type": "TOOL",
+      "name": "evidence-upload",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_dispute_agent_1",
+      "startTime": "2025-08-30T20:00:06.000Z",
+      "endTime": "2025-08-30T20:00:08.000Z",
+      "latency": 2000,
+      "version": "1.0.0",
+      "traceName": "dispute_task",
+      "tags": [
+        "dispute"
+      ],
+      "input": "upload shipping proof R-2001",
+      "output": "3 documents uploaded",
+      "metadata": {},
+      "statusMessage": ""
+    },
+    {
+      "id": "obs_dispute_tool_1",
+      "traceId": "tr_dispute_1",
+      "projectId": "prj-refunds",
+      "type": "TOOL",
+      "name": "dispute-open",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_dispute_agent_1",
+      "startTime": "2025-08-30T20:00:02.000Z",
+      "endTime": "2025-08-30T20:00:05.000Z",
+      "latency": 3000,
+      "version": "1.0.0",
+      "traceName": "dispute_task",
+      "tags": [
+        "dispute"
+      ],
+      "input": "open dispute R-2001 reason: not received",
+      "output": "dispute dp-101 opened",
+      "metadata": {},
+      "statusMessage": ""
+    },
+    {
+      "id": "obs_dispute_span_1",
+      "traceId": "tr_dispute_1",
+      "projectId": "prj-refunds",
+      "type": "SPAN",
+      "name": "policy-lookup",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_dispute_agent_1",
+      "startTime": "2025-08-30T20:00:01.000Z",
+      "endTime": "2025-08-30T20:00:02.000Z",
+      "latency": 1000,
+      "version": "1.0.0",
+      "traceName": "dispute_task",
+      "tags": [
+        "dispute"
+      ],
+      "input": "lookup dispute policy",
+      "output": "policy v3 found",
+      "metadata": {},
+      "statusMessage": ""
+    },
+    {
+      "id": "obs_dispute_agent_1",
+      "traceId": "tr_dispute_1",
+      "projectId": "prj-refunds",
+      "type": "AGENT",
+      "name": "dispute-agent",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": true,
+      "parentObservationId": null,
+      "startTime": "2025-08-30T20:00:00.000Z",
+      "endTime": "2025-08-30T20:00:20.000Z",
+      "latency": 20000,
+      "version": "1.0.0",
+      "traceName": "dispute_task",
+      "tags": [
+        "dispute"
+      ],
+      "input": "Open a card dispute for order R-2001.",
+      "output": "Dispute opened and evidence uploaded.",
+      "metadata": {},
+      "statusMessage": "",
+      "sessionId": "sess_dispute_1",
+      "userId": "user_51"
+    },
+    {
+      "id": "obs_dispute_span_3",
+      "traceId": "tr_dispute_2",
+      "projectId": "prj-refunds",
+      "type": "SPAN",
+      "name": "refund-settlement",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_dispute_agent_2",
+      "startTime": "2025-08-30T16:40:20.000Z",
+      "endTime": "2025-08-30T16:40:21.000Z",
+      "latency": 1000,
+      "version": "1.0.0",
+      "traceName": "dispute_task",
+      "tags": [
+        "dispute"
+      ],
+      "input": "settle R-2002",
+      "output": "settled 129.00",
+      "metadata": {},
+      "statusMessage": ""
+    },
+    {
+      "id": "obs_dispute_gen_4",
+      "traceId": "tr_dispute_2",
+      "projectId": "prj-refunds",
+      "type": "GENERATION",
+      "name": "decision-letter",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_dispute_agent_2",
+      "startTime": "2025-08-30T16:40:16.000Z",
+      "endTime": "2025-08-30T16:40:19.000Z",
+      "latency": 3000,
+      "version": "1.0.0",
+      "traceName": "dispute_task",
+      "tags": [
+        "dispute"
+      ],
+      "input": "Draft decision letter",
+      "output": "Letter drafted.",
+      "metadata": {},
+      "statusMessage": "",
+      "model": "gpt-4o",
+      "internalModelId": "gpt-4o-2024-08-06",
+      "modelParameters": {
+        "temperature": 0.2
+      },
+      "inputPrice": "0.002500",
+      "outputPrice": "0.010000",
+      "totalPrice": "0.012500",
+      "usageDetails": {
+        "input": 900,
+        "output": 250,
+        "total": 1150
+      },
+      "costDetails": {
+        "input": 0.00225,
+        "output": 0.0025,
+        "total": 0.00475
+      }
+    },
+    {
+      "id": "obs_dispute_tool_6",
+      "traceId": "tr_dispute_2",
+      "projectId": "prj-refunds",
+      "type": "TOOL",
+      "name": "dispute-check",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_dispute_agent_2",
+      "startTime": "2025-08-30T16:40:14.000Z",
+      "endTime": "2025-08-30T16:40:15.000Z",
+      "latency": 1000,
+      "version": "1.0.0",
+      "traceName": "dispute_task",
+      "tags": [
+        "dispute"
+      ],
+      "input": "check dispute status",
+      "output": "won",
+      "metadata": {},
+      "statusMessage": ""
+    }
+  ],
+  "meta": {
+    "cursor": "cursor-obs-10"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "name": "canon",
+  "version": "0.1.0",
+  "description": "Agent behaviour governance from Langfuse traces (v0.1: TS/Node CLI + library, no server).",
+  "type": "module",
+  "license": "MIT",
+  "private": true,
+  "engines": {
+    "node": ">=20"
+  },
+  "bin": {
+    "canon": "dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src tests tsup.config.ts vitest.config.ts",
+    "test": "vitest run",
+    "build": "tsup",
+    "check:runtime-deps": "node scripts/check-runtime-deps.mjs",
+    "check:types": "node scripts/check-types.mjs"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "eslint": "^9.30.1",
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.35.1",
+    "vitest": "^3.2.4"
+  }
+}

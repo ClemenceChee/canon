@@ -1,0 +1,312 @@
+{
+  "proposals": [
+    {
+      "kind": "model-usage",
+      "ruleKey": "model-usage-dispute-task",
+      "severity": "advisory",
+      "title": "Prefer the cheaper model in \"dispute_task\"",
+      "ruleText": "In task \"dispute_task\", GENERATION runs should use model \"gpt-4o-mini\" instead of the costlier \"gpt-4o\" where outcomes do not improve.",
+      "assertion": "\"dispute_task\" GENERATION runs never use the costlier \"gpt-4o\" without a success gain over \"gpt-4o-mini\".",
+      "constraints": {
+        "modelFamily": [
+          "gpt-4o-mini"
+        ],
+        "taskKeys": [
+          "dispute_task"
+        ]
+      },
+      "confidence": 0.45,
+      "coverage": {
+        "traces": 12,
+        "observations": 33,
+        "agents": 1,
+        "sessions": 12,
+        "window": {
+          "from": "2025-08-28T14:00:00.000Z",
+          "to": "2025-08-31T11:00:21.000Z"
+        },
+        "environments": [
+          "production"
+        ],
+        "consistency": 1.0
+      },
+      "evidence": [
+        {
+          "role": "supporting",
+          "traceId": "tr_dispute_1",
+          "observationIds": [
+            "obs_dispute_gen_1",
+            "obs_dispute_gen_2"
+          ]
+        },
+        {
+          "role": "supporting",
+          "traceId": "tr_dispute_10",
+          "observationIds": [
+            "obs_dsp10_gen_s",
+            "obs_dsp10_gen_d",
+            "obs_dsp10_gen_e"
+          ]
+        },
+        {
+          "role": "supporting",
+          "traceId": "tr_dispute_11",
+          "observationIds": [
+            "obs_dsp11_gen_s",
+            "obs_dsp11_gen_d",
+            "obs_dsp11_gen_e"
+          ]
+        },
+        {
+          "role": "supporting",
+          "traceId": "tr_dispute_2",
+          "observationIds": [
+            "obs_dispute_gen_3",
+            "obs_dispute_gen_4"
+          ]
+        },
+        {
+          "role": "supporting",
+          "traceId": "tr_dispute_5",
+          "observationIds": [
+            "obs_dispute_gen_9",
+            "obs_dispute_gen_10",
+            "obs_dispute_gen_10b"
+          ]
+        },
+        {
+          "role": "supporting",
+          "traceId": "tr_dispute_6",
+          "observationIds": [
+            "obs_dsp6_gen_s",
+            "obs_dsp6_gen_d",
+            "obs_dsp6_gen_e"
+          ]
+        },
+        {
+          "role": "supporting",
+          "traceId": "tr_dispute_7",
+          "observationIds": [
+            "obs_dsp7_gen_s",
+            "obs_dsp7_gen_d",
+            "obs_dsp7_gen_e"
+          ]
+        },
+        {
+          "role": "supporting",
+          "traceId": "tr_dispute_8",
+          "observationIds": [
+            "obs_dsp8_gen_s",
+            "obs_dsp8_gen_d",
+            "obs_dsp8_gen_e"
+          ]
+        },
+        {
+          "role": "supporting",
+          "traceId": "tr_dispute_9",
+          "observationIds": [
+            "obs_dsp9_gen_s",
+            "obs_dsp9_gen_d",
+            "obs_dsp9_gen_e"
+          ]
+        },
+        {
+          "role": "divergent",
+          "traceId": "tr_dispute_12",
+          "observationIds": [
+            "obs_dsp12_gen_s",
+            "obs_dsp12_gen_d"
+          ]
+        },
+        {
+          "role": "divergent",
+          "traceId": "tr_dispute_3",
+          "observationIds": [
+            "obs_dispute_gen_5b",
+            "obs_dispute_gen_5",
+            "obs_dispute_gen_6"
+          ]
+        },
+        {
+          "role": "divergent",
+          "traceId": "tr_dispute_4",
+          "observationIds": [
+            "obs_dispute_gen_7b",
+            "obs_dispute_gen_7",
+            "obs_dispute_gen_8"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "side-effect-retry",
+      "ruleKey": "side-effect-retry-chargeback-task-charge-reversal",
+      "severity": "advisory",
+      "title": "Never repeat side-effect TOOL \"charge-reversal\" in \"chargeback_task\"",
+      "ruleText": "In task \"chargeback_task\", AGENT runs must not call the side-effect TOOL \"charge-reversal\" more than once (a retry after error or timeout re-executes the side effect).",
+      "assertion": "\"chargeback_task\" AGENT runs call \"charge-reversal\" at most once.",
+      "constraints": {
+        "tool": "charge-reversal",
+        "sideEffect": true,
+        "taskKeys": [
+          "chargeback_task"
+        ],
+        "maxAttempts": 1
+      },
+      "confidence": 0.5,
+      "coverage": {
+        "traces": 7,
+        "observations": 14,
+        "agents": 1,
+        "sessions": 7,
+        "window": {
+          "from": "2025-08-27T01:10:00.000Z",
+          "to": "2025-08-27T16:00:20.000Z"
+        },
+        "environments": [
+          "production"
+        ],
+        "consistency": 1.0
+      },
+      "evidence": [
+        {
+          "role": "supporting",
+          "traceId": "tr_charge_10",
+          "observationIds": [
+            "obs_chg10_tool_r1",
+            "obs_chg10_tool_r2"
+          ]
+        },
+        {
+          "role": "supporting",
+          "traceId": "tr_charge_3",
+          "observationIds": [
+            "obs_charge_tool_10",
+            "obs_charge_tool_11"
+          ]
+        },
+        {
+          "role": "supporting",
+          "traceId": "tr_charge_5",
+          "observationIds": [
+            "obs_chg5_tool_r1",
+            "obs_chg5_tool_r2"
+          ]
+        },
+        {
+          "role": "supporting",
+          "traceId": "tr_charge_6",
+          "observationIds": [
+            "obs_chg6_tool_r1",
+            "obs_chg6_tool_r2"
+          ]
+        },
+        {
+          "role": "supporting",
+          "traceId": "tr_charge_7",
+          "observationIds": [
+            "obs_chg7_tool_r1",
+            "obs_chg7_tool_r2"
+          ]
+        },
+        {
+          "role": "supporting",
+          "traceId": "tr_charge_8",
+          "observationIds": [
+            "obs_chg8_tool_r1",
+            "obs_chg8_tool_r2"
+          ]
+        },
+        {
+          "role": "supporting",
+          "traceId": "tr_charge_9",
+          "observationIds": [
+            "obs_chg9_tool_r1",
+            "obs_chg9_tool_r2"
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "tool-choice",
+      "ruleKey": "tool-choice-refund-task-refund-standard",
+      "severity": "advisory",
+      "title": "Standardise tool choice in \"refund_task\" on refund-standard",
+      "ruleText": "In task \"refund_task\", AGENT runs should use TOOL \"refund-standard\" instead of TOOL \"refund-quick\".",
+      "assertion": "Every \"refund_task\" AGENT run selects TOOL \"refund-standard\" at the tool-choice decision point.",
+      "constraints": {
+        "tool": "refund-standard",
+        "taskKeys": [
+          "refund_task"
+        ]
+      },
+      "confidence": 0.65,
+      "coverage": {
+        "traces": 7,
+        "observations": 8,
+        "agents": 2,
+        "sessions": 7,
+        "window": {
+          "from": "2025-08-31T09:15:00.000Z",
+          "to": "2025-08-31T23:20:12.000Z"
+        },
+        "environments": [
+          "production"
+        ],
+        "consistency": 1.0
+      },
+      "evidence": [
+        {
+          "role": "supporting",
+          "traceId": "tr_refund_1",
+          "observationIds": [
+            "obs_refund_tool_1"
+          ]
+        },
+        {
+          "role": "supporting",
+          "traceId": "tr_refund_2",
+          "observationIds": [
+            "obs_refund_tool_3"
+          ]
+        },
+        {
+          "role": "supporting",
+          "traceId": "tr_refund_3",
+          "observationIds": [
+            "obs_refund_tool_4",
+            "obs_refund_tool_5"
+          ]
+        },
+        {
+          "role": "supporting",
+          "traceId": "tr_refund_6",
+          "observationIds": [
+            "obs_refund_tool_9"
+          ]
+        },
+        {
+          "role": "supporting",
+          "traceId": "tr_refund_7",
+          "observationIds": [
+            "obs_refund7_tool"
+          ]
+        },
+        {
+          "role": "supporting",
+          "traceId": "tr_refund_8",
+          "observationIds": [
+            "obs_refund8_tool"
+          ]
+        },
+        {
+          "role": "divergent",
+          "traceId": "tr_refund_5",
+          "observationIds": [
+            "obs_support_tool_1"
+          ]
+        }
+      ]
+    }
+  ]
+}

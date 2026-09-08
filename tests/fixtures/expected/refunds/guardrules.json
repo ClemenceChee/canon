@@ -1,0 +1,118 @@
+{
+  "schema": "canon/guard-rules/v1",
+  "meta": {
+    "projectId": "prj-refunds",
+    "exportedAt": "2025-09-01T12:00:00.000Z",
+    "canonVersion": 1,
+    "source": {
+      "tool": "canon",
+      "version": "0.1.0"
+    }
+  },
+  "rules": [
+    {
+      "id": "side-effect-retry-chargeback-task-charge-reversal.v1",
+      "ruleKey": "side-effect-retry-chargeback-task-charge-reversal",
+      "kind": "side-effect-retry",
+      "severity": "advisory",
+      "version": 1,
+      "assertion": "\"chargeback_task\" AGENT runs call \"charge-reversal\" at most once.",
+      "scope": {
+        "environments": [
+          "production"
+        ],
+        "agents": [
+          "chargeback-agent"
+        ],
+        "taskKeys": [
+          "chargeback_task"
+        ]
+      },
+      "constraints": {
+        "tool": "charge-reversal",
+        "sideEffect": true,
+        "taskKeys": [
+          "chargeback_task"
+        ],
+        "maxAttempts": 1
+      },
+      "provenance": {
+        "confidence": 0.5,
+        "coverage": {
+          "traces": 7,
+          "observations": 14,
+          "agents": 1,
+          "sessions": 7,
+          "window": {
+            "from": "2025-08-27T01:10:00.000Z",
+            "to": "2025-08-27T16:00:20.000Z"
+          },
+          "environments": [
+            "production"
+          ],
+          "consistency": 1.0
+        },
+        "evidence": [
+          {
+            "role": "supporting",
+            "traceId": "tr_charge_10",
+            "observationIds": [
+              "obs_chg10_tool_r1",
+              "obs_chg10_tool_r2"
+            ]
+          },
+          {
+            "role": "supporting",
+            "traceId": "tr_charge_3",
+            "observationIds": [
+              "obs_charge_tool_10",
+              "obs_charge_tool_11"
+            ]
+          },
+          {
+            "role": "supporting",
+            "traceId": "tr_charge_5",
+            "observationIds": [
+              "obs_chg5_tool_r1",
+              "obs_chg5_tool_r2"
+            ]
+          },
+          {
+            "role": "supporting",
+            "traceId": "tr_charge_6",
+            "observationIds": [
+              "obs_chg6_tool_r1",
+              "obs_chg6_tool_r2"
+            ]
+          },
+          {
+            "role": "supporting",
+            "traceId": "tr_charge_7",
+            "observationIds": [
+              "obs_chg7_tool_r1",
+              "obs_chg7_tool_r2"
+            ]
+          },
+          {
+            "role": "supporting",
+            "traceId": "tr_charge_8",
+            "observationIds": [
+              "obs_chg8_tool_r1",
+              "obs_chg8_tool_r2"
+            ]
+          },
+          {
+            "role": "supporting",
+            "traceId": "tr_charge_9",
+            "observationIds": [
+              "obs_chg9_tool_r1",
+              "obs_chg9_tool_r2"
+            ]
+          }
+        ],
+        "ratifiedBy": "tester",
+        "ratifiedAt": "2025-09-01T12:00:00.000Z"
+      }
+    }
+  ]
+}

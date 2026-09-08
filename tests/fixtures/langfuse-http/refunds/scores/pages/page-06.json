@@ -1,0 +1,125 @@
+{
+  "data": [
+    {
+      "id": "score_obs_6",
+      "projectId": "prj-refunds",
+      "traceId": "tr_charge_7",
+      "name": "reversal-accuracy",
+      "dataType": "BOOLEAN",
+      "value": false,
+      "source": "ANNOTATION",
+      "authorUserId": "reviewer@acme",
+      "timestamp": "2025-08-27T03:55:00.000Z",
+      "environment": "production",
+      "subject": {
+        "kind": "OBSERVATION",
+        "id": "obs_chg7_tool_r2",
+        "traceId": "tr_charge_7"
+      },
+      "comment": "duplicate reversal attempted"
+    },
+    {
+      "id": "score_charge_7",
+      "projectId": "prj-refunds",
+      "traceId": "tr_charge_7",
+      "name": "chargeback-outcome",
+      "dataType": "NUMERIC",
+      "value": 1,
+      "source": "EVAL",
+      "timestamp": "2025-08-27T03:50:00.000Z",
+      "environment": "production",
+      "subject": {
+        "kind": "TRACE",
+        "id": "tr_charge_7",
+        "traceId": "tr_charge_7"
+      }
+    },
+    {
+      "id": "score_doublecall_2",
+      "projectId": "prj-refunds",
+      "traceId": "tr_charge_6",
+      "name": "no-side-effect-retry",
+      "dataType": "BOOLEAN",
+      "value": false,
+      "source": "EVAL",
+      "timestamp": "2025-08-27T02:50:00.000Z",
+      "environment": "production",
+      "subject": {
+        "kind": "TRACE",
+        "id": "tr_charge_6",
+        "traceId": "tr_charge_6"
+      },
+      "comment": "charge-reversal called twice"
+    },
+    {
+      "id": "score_charge_6",
+      "projectId": "prj-refunds",
+      "traceId": "tr_charge_6",
+      "name": "chargeback-outcome",
+      "dataType": "NUMERIC",
+      "value": 1,
+      "source": "EVAL",
+      "timestamp": "2025-08-27T02:40:00.000Z",
+      "environment": "production",
+      "subject": {
+        "kind": "TRACE",
+        "id": "tr_charge_6",
+        "traceId": "tr_charge_6"
+      }
+    },
+    {
+      "id": "score_doublecall_1",
+      "projectId": "prj-refunds",
+      "traceId": "tr_charge_5",
+      "name": "no-side-effect-retry",
+      "dataType": "BOOLEAN",
+      "value": false,
+      "source": "EVAL",
+      "timestamp": "2025-08-27T01:40:00.000Z",
+      "environment": "production",
+      "subject": {
+        "kind": "TRACE",
+        "id": "tr_charge_5",
+        "traceId": "tr_charge_5"
+      },
+      "comment": "charge-reversal called twice"
+    },
+    {
+      "id": "score_obs_5",
+      "projectId": "prj-refunds",
+      "traceId": "tr_charge_5",
+      "name": "reversal-accuracy",
+      "dataType": "BOOLEAN",
+      "value": false,
+      "source": "ANNOTATION",
+      "authorUserId": "reviewer@acme",
+      "timestamp": "2025-08-27T01:35:00.000Z",
+      "environment": "production",
+      "subject": {
+        "kind": "OBSERVATION",
+        "id": "obs_chg5_tool_r2",
+        "traceId": "tr_charge_5"
+      },
+      "comment": "duplicate reversal attempted"
+    },
+    {
+      "id": "score_charge_5",
+      "projectId": "prj-refunds",
+      "traceId": "tr_charge_5",
+      "name": "chargeback-outcome",
+      "dataType": "NUMERIC",
+      "value": 1,
+      "source": "EVAL",
+      "timestamp": "2025-08-27T01:30:00.000Z",
+      "environment": "production",
+      "subject": {
+        "kind": "TRACE",
+        "id": "tr_charge_5",
+        "traceId": "tr_charge_5"
+      }
+    }
+  ],
+  "meta": {
+    "cursor": null
+  }
+}

@@ -1,0 +1,247 @@
+{
+  "data": [
+    {
+      "id": "obs_dsp10_tool_e",
+      "traceId": "tr_dispute_10",
+      "projectId": "prj-refunds",
+      "type": "TOOL",
+      "name": "evidence-upload",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_dsp10_agent",
+      "startTime": "2025-08-30T22:30:10.000Z",
+      "endTime": "2025-08-30T22:30:12.000Z",
+      "latency": 2000,
+      "version": "1.0.0",
+      "traceName": "dispute_task",
+      "tags": [
+        "dispute"
+      ],
+      "input": "upload evidence ds-6010",
+      "output": "evidence filed",
+      "metadata": {},
+      "statusMessage": ""
+    },
+    {
+      "id": "obs_dsp10_gen_s",
+      "traceId": "tr_dispute_10",
+      "projectId": "prj-refunds",
+      "type": "GENERATION",
+      "name": "dispute-summary",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_dsp10_agent",
+      "startTime": "2025-08-30T22:30:06.000Z",
+      "endTime": "2025-08-30T22:30:08.000Z",
+      "latency": 2000,
+      "version": "1.0.0",
+      "traceName": "dispute_task",
+      "tags": [
+        "dispute"
+      ],
+      "input": "Summarise dispute ds-6010",
+      "output": "Summary written.",
+      "metadata": {},
+      "statusMessage": "",
+      "model": "gpt-4o",
+      "internalModelId": "gpt-4o-2024-08-06",
+      "modelParameters": {
+        "temperature": 0.2
+      },
+      "inputPrice": "0.002500",
+      "outputPrice": "0.010000",
+      "totalPrice": "0.012500",
+      "usageDetails": {
+        "input": 900,
+        "output": 250,
+        "total": 1150
+      },
+      "costDetails": {
+        "input": 0.00225,
+        "output": 0.0025,
+        "total": 0.00475
+      }
+    },
+    {
+      "id": "obs_dsp10_tool_o",
+      "traceId": "tr_dispute_10",
+      "projectId": "prj-refunds",
+      "type": "TOOL",
+      "name": "dispute-open",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_dsp10_agent",
+      "startTime": "2025-08-30T22:30:03.000Z",
+      "endTime": "2025-08-30T22:30:05.000Z",
+      "latency": 2000,
+      "version": "1.0.0",
+      "traceName": "dispute_task",
+      "tags": [
+        "dispute"
+      ],
+      "input": "open dispute ds-6010",
+      "output": "docket D-6010",
+      "metadata": {},
+      "statusMessage": ""
+    },
+    {
+      "id": "obs_dsp10_span_p",
+      "traceId": "tr_dispute_10",
+      "projectId": "prj-refunds",
+      "type": "SPAN",
+      "name": "policy-lookup",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_dsp10_agent",
+      "startTime": "2025-08-30T22:30:01.000Z",
+      "endTime": "2025-08-30T22:30:02.000Z",
+      "latency": 1000,
+      "version": "1.0.0",
+      "traceName": "dispute_task",
+      "tags": [
+        "dispute"
+      ],
+      "input": "read policy for dispute ds-6010",
+      "output": "policy ok",
+      "metadata": {},
+      "statusMessage": ""
+    },
+    {
+      "id": "obs_dsp10_agent",
+      "traceId": "tr_dispute_10",
+      "projectId": "prj-refunds",
+      "type": "AGENT",
+      "name": "dispute-agent",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": true,
+      "parentObservationId": null,
+      "startTime": "2025-08-30T22:30:00.000Z",
+      "endTime": "2025-08-30T22:30:21.000Z",
+      "latency": 21000,
+      "version": "1.0.0",
+      "traceName": "dispute_task",
+      "tags": [
+        "dispute"
+      ],
+      "input": "Handle dispute ds-6010.",
+      "output": "Dispute processed.",
+      "metadata": {},
+      "statusMessage": "",
+      "sessionId": "sess_dispute_10",
+      "userId": "user_83"
+    },
+    {
+      "id": "obs_dispute_gen_2",
+      "traceId": "tr_dispute_1",
+      "projectId": "prj-refunds",
+      "type": "GENERATION",
+      "name": "decision-letter",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_dispute_agent_1",
+      "startTime": "2025-08-30T20:00:15.000Z",
+      "endTime": "2025-08-30T20:00:18.000Z",
+      "latency": 3000,
+      "version": "1.0.0",
+      "traceName": "dispute_task",
+      "tags": [
+        "dispute"
+      ],
+      "input": "Draft decision letter",
+      "output": "Letter drafted for reviewer approval.",
+      "metadata": {},
+      "statusMessage": "",
+      "model": "gpt-4o",
+      "internalModelId": "gpt-4o-2024-08-06",
+      "modelParameters": {
+        "temperature": 0.2
+      },
+      "inputPrice": "0.002500",
+      "outputPrice": "0.010000",
+      "totalPrice": "0.012500",
+      "usageDetails": {
+        "input": 900,
+        "output": 250,
+        "total": 1150
+      },
+      "costDetails": {
+        "input": 0.00225,
+        "output": 0.0025,
+        "total": 0.00475
+      }
+    },
+    {
+      "id": "obs_dispute_tool_3",
+      "traceId": "tr_dispute_1",
+      "projectId": "prj-refunds",
+      "type": "TOOL",
+      "name": "dispute-check",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_dispute_agent_1",
+      "startTime": "2025-08-30T20:00:13.000Z",
+      "endTime": "2025-08-30T20:00:14.000Z",
+      "latency": 1000,
+      "version": "1.0.0",
+      "traceName": "dispute_task",
+      "tags": [
+        "dispute"
+      ],
+      "input": "check dispute status",
+      "output": "in review",
+      "metadata": {},
+      "statusMessage": ""
+    },
+    {
+      "id": "obs_dispute_gen_1",
+      "traceId": "tr_dispute_1",
+      "projectId": "prj-refunds",
+      "type": "GENERATION",
+      "name": "dispute-summary",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_dispute_agent_1",
+      "startTime": "2025-08-30T20:00:09.000Z",
+      "endTime": "2025-08-30T20:00:12.000Z",
+      "latency": 3000,
+      "version": "1.0.0",
+      "traceName": "dispute_task",
+      "tags": [
+        "dispute"
+      ],
+      "input": "Summarise the R-2001 timeline for the bank",
+      "output": "Timeline written for the bank reviewer.",
+      "metadata": {},
+      "statusMessage": "",
+      "model": "gpt-4o",
+      "internalModelId": "gpt-4o-2024-08-06",
+      "modelParameters": {
+        "temperature": 0.2
+      },
+      "inputPrice": "0.002500",
+      "outputPrice": "0.010000",
+      "totalPrice": "0.012500",
+      "usageDetails": {
+        "input": 900,
+        "output": 250,
+        "total": 1150
+      },
+      "costDetails": {
+        "input": 0.00225,
+        "output": 0.0025,
+        "total": 0.00475
+      }
+    }
+  ],
+  "meta": {
+    "cursor": "cursor-obs-9"
+  }
+}

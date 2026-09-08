@@ -1,0 +1,139 @@
+{
+  "data": [
+    {
+      "id": "score_tool_5",
+      "projectId": "prj-refunds",
+      "traceId": "tr_refund_5",
+      "name": "tool-appropriateness",
+      "dataType": "BOOLEAN",
+      "value": false,
+      "source": "ANNOTATION",
+      "authorUserId": "reviewer@acme",
+      "timestamp": "2025-08-31T13:00:00.000Z",
+      "environment": "production",
+      "subject": {
+        "kind": "OBSERVATION",
+        "id": "obs_support_tool_1",
+        "traceId": "tr_refund_5"
+      },
+      "comment": "refund-quick bypasses the standard refund flow"
+    },
+    {
+      "id": "score_dispute_12",
+      "projectId": "prj-refunds",
+      "traceId": "tr_dispute_12",
+      "name": "dispute-outcome",
+      "dataType": "NUMERIC",
+      "value": 1,
+      "source": "EVAL",
+      "timestamp": "2025-08-31T11:20:00.000Z",
+      "environment": "production",
+      "subject": {
+        "kind": "TRACE",
+        "id": "tr_dispute_12",
+        "traceId": "tr_dispute_12"
+      }
+    },
+    {
+      "id": "score_refund_6",
+      "projectId": "prj-refunds",
+      "traceId": "tr_refund_6",
+      "name": "refund-correctness",
+      "dataType": "NUMERIC",
+      "value": 1,
+      "source": "EVAL",
+      "timestamp": "2025-08-31T09:30:00.000Z",
+      "environment": "production",
+      "subject": {
+        "kind": "TRACE",
+        "id": "tr_refund_6",
+        "traceId": "tr_refund_6"
+      }
+    },
+    {
+      "id": "score_eff_3",
+      "projectId": "prj-refunds",
+      "traceId": "tr_dispute_11",
+      "name": "model-efficiency",
+      "dataType": "NUMERIC",
+      "value": 0.5,
+      "source": "EVAL",
+      "timestamp": "2025-08-31T08:35:00.000Z",
+      "environment": "production",
+      "subject": {
+        "kind": "TRACE",
+        "id": "tr_dispute_11",
+        "traceId": "tr_dispute_11"
+      },
+      "comment": "costlier model on failed resolution"
+    },
+    {
+      "id": "score_dispute_11",
+      "projectId": "prj-refunds",
+      "traceId": "tr_dispute_11",
+      "name": "dispute-outcome",
+      "dataType": "NUMERIC",
+      "value": 0,
+      "source": "EVAL",
+      "timestamp": "2025-08-31T08:20:00.000Z",
+      "environment": "production",
+      "subject": {
+        "kind": "TRACE",
+        "id": "tr_dispute_11",
+        "traceId": "tr_dispute_11"
+      }
+    },
+    {
+      "id": "score_dispute_10",
+      "projectId": "prj-refunds",
+      "traceId": "tr_dispute_10",
+      "name": "dispute-outcome",
+      "dataType": "NUMERIC",
+      "value": 1,
+      "source": "EVAL",
+      "timestamp": "2025-08-30T22:50:00.000Z",
+      "environment": "production",
+      "subject": {
+        "kind": "TRACE",
+        "id": "tr_dispute_10",
+        "traceId": "tr_dispute_10"
+      }
+    },
+    {
+      "id": "score_eff_1",
+      "projectId": "prj-refunds",
+      "traceId": "tr_dispute_1",
+      "name": "model-efficiency",
+      "dataType": "NUMERIC",
+      "value": 0.4,
+      "source": "EVAL",
+      "timestamp": "2025-08-30T20:35:00.000Z",
+      "environment": "production",
+      "subject": {
+        "kind": "TRACE",
+        "id": "tr_dispute_1",
+        "traceId": "tr_dispute_1"
+      },
+      "comment": "gpt-4o cost 12x mini with no faster resolution"
+    },
+    {
+      "id": "score_dispute_1",
+      "projectId": "prj-refunds",
+      "traceId": "tr_dispute_1",
+      "name": "dispute-outcome",
+      "dataType": "NUMERIC",
+      "value": 1,
+      "source": "EVAL",
+      "timestamp": "2025-08-30T20:30:00.000Z",
+      "environment": "production",
+      "subject": {
+        "kind": "TRACE",
+        "id": "tr_dispute_1",
+        "traceId": "tr_dispute_1"
+      }
+    }
+  ],
+  "meta": {
+    "cursor": "cursor-scores-2"
+  }
+}

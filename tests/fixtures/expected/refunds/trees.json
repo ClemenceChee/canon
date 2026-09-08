@@ -1,0 +1,585 @@
+{
+  "corrupted": [],
+  "skipped": [],
+  "trees": {
+    "tr_charge_1": {
+      "agentId": "chargeback-agent",
+      "endTime": "2025-08-28T19:00:22.000Z",
+      "environment": "production",
+      "models": [
+        "gpt-4o-mini"
+      ],
+      "outcome": "success",
+      "rootObservationId": "obs_charge_agent_1",
+      "rowCount": 10,
+      "scoreCount": 1,
+      "startTime": "2025-08-28T19:00:00.000Z",
+      "taskKey": "chargeback_task",
+      "toolCalls": [
+        "charge-lookup",
+        "charge-reversal",
+        "case-open",
+        "notify-bank"
+      ]
+    },
+    "tr_charge_10": {
+      "agentId": "chargeback-agent",
+      "endTime": "2025-08-27T07:15:24.000Z",
+      "environment": "production",
+      "models": [
+        "gpt-4o-mini"
+      ],
+      "outcome": "failure",
+      "rootObservationId": "obs_chg10_agent",
+      "rowCount": 10,
+      "scoreCount": 2,
+      "startTime": "2025-08-27T07:15:00.000Z",
+      "taskKey": "chargeback_task",
+      "toolCalls": [
+        "charge-lookup",
+        "charge-reversal",
+        "charge-reversal",
+        "case-open",
+        "notify-bank"
+      ]
+    },
+    "tr_charge_2": {
+      "agentId": "chargeback-agent",
+      "endTime": "2025-08-28T10:30:19.000Z",
+      "environment": "production",
+      "models": [
+        "gpt-4o-mini"
+      ],
+      "outcome": "success",
+      "rootObservationId": "obs_charge_agent_2",
+      "rowCount": 9,
+      "scoreCount": 1,
+      "startTime": "2025-08-28T10:30:00.000Z",
+      "taskKey": "chargeback_task",
+      "toolCalls": [
+        "charge-lookup",
+        "charge-reversal",
+        "case-open",
+        "notify-bank"
+      ]
+    },
+    "tr_charge_3": {
+      "agentId": "chargeback-agent",
+      "endTime": "2025-08-27T16:00:20.000Z",
+      "environment": "production",
+      "models": [
+        "gpt-4o-mini"
+      ],
+      "outcome": "failure",
+      "rootObservationId": "obs_charge_agent_3",
+      "rowCount": 10,
+      "scoreCount": 2,
+      "startTime": "2025-08-27T16:00:00.000Z",
+      "taskKey": "chargeback_task",
+      "toolCalls": [
+        "charge-lookup",
+        "charge-reversal",
+        "charge-reversal",
+        "case-open",
+        "notify-bank"
+      ]
+    },
+    "tr_charge_4": {
+      "agentId": "chargeback-agent",
+      "endTime": "2025-08-27T08:30:22.000Z",
+      "environment": "production",
+      "models": [
+        "gpt-4o"
+      ],
+      "outcome": "success",
+      "rootObservationId": "obs_charge_agent_4",
+      "rowCount": 11,
+      "scoreCount": 1,
+      "startTime": "2025-08-27T08:30:00.000Z",
+      "taskKey": "chargeback_task",
+      "toolCalls": [
+        "charge-lookup",
+        "charge-reversal",
+        "case-open",
+        "notify-bank"
+      ]
+    },
+    "tr_charge_5": {
+      "agentId": "chargeback-agent",
+      "endTime": "2025-08-27T01:10:24.000Z",
+      "environment": "production",
+      "models": [
+        "gpt-4o-mini"
+      ],
+      "outcome": "failure",
+      "rootObservationId": "obs_chg5_agent",
+      "rowCount": 10,
+      "scoreCount": 3,
+      "startTime": "2025-08-27T01:10:00.000Z",
+      "taskKey": "chargeback_task",
+      "toolCalls": [
+        "charge-lookup",
+        "charge-reversal",
+        "charge-reversal",
+        "case-open",
+        "notify-bank"
+      ]
+    },
+    "tr_charge_6": {
+      "agentId": "chargeback-agent",
+      "endTime": "2025-08-27T02:20:24.000Z",
+      "environment": "production",
+      "models": [
+        "gpt-4o-mini"
+      ],
+      "outcome": "failure",
+      "rootObservationId": "obs_chg6_agent",
+      "rowCount": 10,
+      "scoreCount": 2,
+      "startTime": "2025-08-27T02:20:00.000Z",
+      "taskKey": "chargeback_task",
+      "toolCalls": [
+        "charge-lookup",
+        "charge-reversal",
+        "charge-reversal",
+        "case-open",
+        "notify-bank"
+      ]
+    },
+    "tr_charge_7": {
+      "agentId": "chargeback-agent",
+      "endTime": "2025-08-27T03:30:24.000Z",
+      "environment": "production",
+      "models": [
+        "gpt-4o-mini"
+      ],
+      "outcome": "success",
+      "rootObservationId": "obs_chg7_agent",
+      "rowCount": 11,
+      "scoreCount": 3,
+      "startTime": "2025-08-27T03:30:00.000Z",
+      "taskKey": "chargeback_task",
+      "toolCalls": [
+        "charge-lookup",
+        "charge-reversal",
+        "charge-reversal",
+        "case-open",
+        "notify-bank"
+      ]
+    },
+    "tr_charge_8": {
+      "agentId": "chargeback-agent",
+      "endTime": "2025-08-27T04:45:24.000Z",
+      "environment": "production",
+      "models": [
+        "gpt-4o-mini"
+      ],
+      "outcome": "success",
+      "rootObservationId": "obs_chg8_agent",
+      "rowCount": 11,
+      "scoreCount": 2,
+      "startTime": "2025-08-27T04:45:00.000Z",
+      "taskKey": "chargeback_task",
+      "toolCalls": [
+        "charge-lookup",
+        "charge-reversal",
+        "charge-reversal",
+        "case-open",
+        "notify-bank"
+      ]
+    },
+    "tr_charge_9": {
+      "agentId": "chargeback-agent",
+      "endTime": "2025-08-27T06:05:24.000Z",
+      "environment": "production",
+      "models": [
+        "gpt-4o"
+      ],
+      "outcome": "success",
+      "rootObservationId": "obs_chg9_agent",
+      "rowCount": 11,
+      "scoreCount": 3,
+      "startTime": "2025-08-27T06:05:00.000Z",
+      "taskKey": "chargeback_task",
+      "toolCalls": [
+        "charge-lookup",
+        "charge-reversal",
+        "charge-reversal",
+        "case-open",
+        "notify-bank"
+      ]
+    },
+    "tr_dispute_1": {
+      "agentId": "dispute-agent",
+      "endTime": "2025-08-30T20:00:20.000Z",
+      "environment": "production",
+      "models": [
+        "gpt-4o"
+      ],
+      "outcome": "success",
+      "rootObservationId": "obs_dispute_agent_1",
+      "rowCount": 8,
+      "scoreCount": 3,
+      "startTime": "2025-08-30T20:00:00.000Z",
+      "taskKey": "dispute_task",
+      "toolCalls": [
+        "dispute-open",
+        "evidence-upload",
+        "dispute-check"
+      ]
+    },
+    "tr_dispute_10": {
+      "agentId": "dispute-agent",
+      "endTime": "2025-08-30T22:30:21.000Z",
+      "environment": "production",
+      "models": [
+        "gpt-4o"
+      ],
+      "outcome": "success",
+      "rootObservationId": "obs_dsp10_agent",
+      "rowCount": 8,
+      "scoreCount": 1,
+      "startTime": "2025-08-30T22:30:00.000Z",
+      "taskKey": "dispute_task",
+      "toolCalls": [
+        "dispute-open",
+        "evidence-upload",
+        "dispute-check"
+      ]
+    },
+    "tr_dispute_11": {
+      "agentId": "dispute-agent",
+      "endTime": "2025-08-31T08:00:21.000Z",
+      "environment": "production",
+      "models": [
+        "gpt-4o"
+      ],
+      "outcome": "failure",
+      "rootObservationId": "obs_dsp11_agent",
+      "rowCount": 8,
+      "scoreCount": 2,
+      "startTime": "2025-08-31T08:00:00.000Z",
+      "taskKey": "dispute_task",
+      "toolCalls": [
+        "dispute-open",
+        "evidence-upload",
+        "dispute-check"
+      ]
+    },
+    "tr_dispute_12": {
+      "agentId": "dispute-agent",
+      "endTime": "2025-08-31T11:00:21.000Z",
+      "environment": "production",
+      "models": [
+        "gpt-4o-mini"
+      ],
+      "outcome": "success",
+      "rootObservationId": "obs_dsp12_agent",
+      "rowCount": 7,
+      "scoreCount": 1,
+      "startTime": "2025-08-31T11:00:00.000Z",
+      "taskKey": "dispute_task",
+      "toolCalls": [
+        "dispute-open",
+        "evidence-upload",
+        "dispute-check"
+      ]
+    },
+    "tr_dispute_2": {
+      "agentId": "dispute-agent",
+      "endTime": "2025-08-30T16:40:21.000Z",
+      "environment": "production",
+      "models": [
+        "gpt-4o"
+      ],
+      "outcome": "success",
+      "rootObservationId": "obs_dispute_agent_2",
+      "rowCount": 8,
+      "scoreCount": 1,
+      "startTime": "2025-08-30T16:40:00.000Z",
+      "taskKey": "dispute_task",
+      "toolCalls": [
+        "dispute-open",
+        "evidence-upload",
+        "dispute-check"
+      ]
+    },
+    "tr_dispute_3": {
+      "agentId": "dispute-agent",
+      "endTime": "2025-08-30T11:20:17.000Z",
+      "environment": "production",
+      "models": [
+        "gpt-4o-mini"
+      ],
+      "outcome": "success",
+      "rootObservationId": "obs_dispute_agent_3",
+      "rowCount": 9,
+      "scoreCount": 1,
+      "startTime": "2025-08-30T11:20:00.000Z",
+      "taskKey": "dispute_task",
+      "toolCalls": [
+        "dispute-open",
+        "evidence-upload",
+        "dispute-check"
+      ]
+    },
+    "tr_dispute_4": {
+      "agentId": "dispute-agent",
+      "endTime": "2025-08-29T17:00:18.000Z",
+      "environment": "production",
+      "models": [
+        "gpt-4o-mini"
+      ],
+      "outcome": "success",
+      "rootObservationId": "obs_dispute_agent_4",
+      "rowCount": 9,
+      "scoreCount": 1,
+      "startTime": "2025-08-29T17:00:00.000Z",
+      "taskKey": "dispute_task",
+      "toolCalls": [
+        "dispute-open",
+        "evidence-upload",
+        "dispute-check"
+      ]
+    },
+    "tr_dispute_5": {
+      "agentId": "dispute-agent",
+      "endTime": "2025-08-29T09:30:19.000Z",
+      "environment": "production",
+      "models": [
+        "gpt-4o"
+      ],
+      "outcome": "failure",
+      "rootObservationId": "obs_dispute_agent_5",
+      "rowCount": 8,
+      "scoreCount": 2,
+      "startTime": "2025-08-29T09:30:00.000Z",
+      "taskKey": "dispute_task",
+      "toolCalls": [
+        "dispute-open",
+        "evidence-upload",
+        "dispute-check"
+      ]
+    },
+    "tr_dispute_6": {
+      "agentId": "dispute-agent",
+      "endTime": "2025-08-28T14:00:21.000Z",
+      "environment": "production",
+      "models": [
+        "gpt-4o"
+      ],
+      "outcome": "success",
+      "rootObservationId": "obs_dsp6_agent",
+      "rowCount": 8,
+      "scoreCount": 1,
+      "startTime": "2025-08-28T14:00:00.000Z",
+      "taskKey": "dispute_task",
+      "toolCalls": [
+        "dispute-open",
+        "evidence-upload",
+        "dispute-check"
+      ]
+    },
+    "tr_dispute_7": {
+      "agentId": "dispute-agent",
+      "endTime": "2025-08-29T06:00:21.000Z",
+      "environment": "production",
+      "models": [
+        "gpt-4o"
+      ],
+      "outcome": "success",
+      "rootObservationId": "obs_dsp7_agent",
+      "rowCount": 8,
+      "scoreCount": 1,
+      "startTime": "2025-08-29T06:00:00.000Z",
+      "taskKey": "dispute_task",
+      "toolCalls": [
+        "dispute-open",
+        "evidence-upload",
+        "dispute-check"
+      ]
+    },
+    "tr_dispute_8": {
+      "agentId": "dispute-agent",
+      "endTime": "2025-08-29T14:30:21.000Z",
+      "environment": "production",
+      "models": [
+        "gpt-4o"
+      ],
+      "outcome": "success",
+      "rootObservationId": "obs_dsp8_agent",
+      "rowCount": 8,
+      "scoreCount": 1,
+      "startTime": "2025-08-29T14:30:00.000Z",
+      "taskKey": "dispute_task",
+      "toolCalls": [
+        "dispute-open",
+        "evidence-upload",
+        "dispute-check"
+      ]
+    },
+    "tr_dispute_9": {
+      "agentId": "dispute-agent",
+      "endTime": "2025-08-30T09:00:21.000Z",
+      "environment": "production",
+      "models": [
+        "gpt-4o"
+      ],
+      "outcome": "success",
+      "rootObservationId": "obs_dsp9_agent",
+      "rowCount": 8,
+      "scoreCount": 2,
+      "startTime": "2025-08-30T09:00:00.000Z",
+      "taskKey": "dispute_task",
+      "toolCalls": [
+        "dispute-open",
+        "evidence-upload",
+        "dispute-check"
+      ]
+    },
+    "tr_refund_1": {
+      "agentId": "refund-agent",
+      "endTime": "2025-08-31T23:20:12.000Z",
+      "environment": "production",
+      "models": [
+        "gpt-4o-mini"
+      ],
+      "outcome": "success",
+      "rootObservationId": "obs_refund_agent_1",
+      "rowCount": 4,
+      "scoreCount": 2,
+      "startTime": "2025-08-31T23:20:00.000Z",
+      "taskKey": "refund_task",
+      "toolCalls": [
+        "refund-standard"
+      ]
+    },
+    "tr_refund_2": {
+      "agentId": "refund-agent",
+      "endTime": "2025-08-31T21:10:14.000Z",
+      "environment": "production",
+      "models": [
+        "gpt-4o-mini"
+      ],
+      "outcome": "success",
+      "rootObservationId": "obs_refund_agent_2",
+      "rowCount": 8,
+      "scoreCount": 1,
+      "startTime": "2025-08-31T21:10:00.000Z",
+      "taskKey": "refund_task",
+      "toolCalls": [
+        "lookup-customer",
+        "refund-standard"
+      ]
+    },
+    "tr_refund_3": {
+      "agentId": "refund-agent",
+      "endTime": "2025-08-31T18:05:16.000Z",
+      "environment": "production",
+      "models": [
+        "gpt-4o"
+      ],
+      "outcome": "failure",
+      "rootObservationId": "obs_refund_agent_3",
+      "rowCount": 7,
+      "scoreCount": 1,
+      "startTime": "2025-08-31T18:05:00.000Z",
+      "taskKey": "refund_task",
+      "toolCalls": [
+        "refund-standard",
+        "refund-standard",
+        "notify-customer"
+      ]
+    },
+    "tr_refund_4": {
+      "agentId": "refund-agent",
+      "endTime": "2025-08-31T15:30:14.000Z",
+      "environment": "production",
+      "models": [
+        "gpt-4o"
+      ],
+      "outcome": "success",
+      "rootObservationId": "obs_refund_agent_4",
+      "rowCount": 6,
+      "scoreCount": 2,
+      "startTime": "2025-08-31T15:30:00.000Z",
+      "taskKey": "refund_task",
+      "toolCalls": [
+        "charge-reversal",
+        "charge-reversal",
+        "notify-customer"
+      ]
+    },
+    "tr_refund_5": {
+      "agentId": "support-agent",
+      "endTime": "2025-08-31T12:45:14.000Z",
+      "environment": "production",
+      "models": [
+        "gpt-4o-mini"
+      ],
+      "outcome": "success",
+      "rootObservationId": "obs_support_agent_1",
+      "rowCount": 6,
+      "scoreCount": 1,
+      "startTime": "2025-08-31T12:45:00.000Z",
+      "taskKey": "refund_task",
+      "toolCalls": [
+        "refund-quick",
+        "lookup-customer"
+      ]
+    },
+    "tr_refund_6": {
+      "agentId": "refund-agent",
+      "endTime": "2025-08-31T09:15:10.000Z",
+      "environment": "production",
+      "models": [
+        "gpt-4o"
+      ],
+      "outcome": "success",
+      "rootObservationId": "obs_refund_agent_6",
+      "rowCount": 5,
+      "scoreCount": 1,
+      "startTime": "2025-08-31T09:15:00.000Z",
+      "taskKey": "refund_task",
+      "toolCalls": [
+        "refund-standard"
+      ]
+    },
+    "tr_refund_7": {
+      "agentId": "refund-agent",
+      "endTime": "2025-08-31T20:30:13.000Z",
+      "environment": "production",
+      "models": [
+        "gpt-4o-mini"
+      ],
+      "outcome": "success",
+      "rootObservationId": "obs_refund7_agent",
+      "rowCount": 5,
+      "scoreCount": 1,
+      "startTime": "2025-08-31T20:30:00.000Z",
+      "taskKey": "refund_task",
+      "toolCalls": [
+        "refund-standard",
+        "notify-customer"
+      ]
+    },
+    "tr_refund_8": {
+      "agentId": "refund-agent",
+      "endTime": "2025-08-31T19:40:13.000Z",
+      "environment": "production",
+      "models": [
+        "gpt-4o-mini"
+      ],
+      "outcome": "success",
+      "rootObservationId": "obs_refund8_agent",
+      "rowCount": 5,
+      "scoreCount": 1,
+      "startTime": "2025-08-31T19:40:00.000Z",
+      "taskKey": "refund_task",
+      "toolCalls": [
+        "refund-standard",
+        "notify-customer"
+      ]
+    }
+  }
+}

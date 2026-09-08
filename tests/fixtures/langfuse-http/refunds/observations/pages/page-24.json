@@ -1,0 +1,227 @@
+{
+  "data": [
+    {
+      "id": "obs_chg10_gen_n",
+      "traceId": "tr_charge_10",
+      "projectId": "prj-refunds",
+      "type": "GENERATION",
+      "name": "case-notes",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_chg10_agent",
+      "startTime": "2025-08-27T07:15:15.000Z",
+      "endTime": "2025-08-27T07:15:17.000Z",
+      "latency": 2000,
+      "version": "1.0.0",
+      "traceName": "chargeback_task",
+      "tags": [
+        "chargeback"
+      ],
+      "input": "Write notes cb-5010",
+      "output": "Notes written.",
+      "metadata": {},
+      "statusMessage": "",
+      "model": "gpt-4o-mini",
+      "internalModelId": "gpt-4o-mini-2024-07-18",
+      "modelParameters": {
+        "temperature": 0.2
+      },
+      "inputPrice": "0.000150",
+      "outputPrice": "0.000600",
+      "totalPrice": "0.000750",
+      "usageDetails": {
+        "input": 800,
+        "output": 220,
+        "total": 1020
+      },
+      "costDetails": {
+        "input": 0.00012,
+        "output": 0.000132,
+        "total": 0.000252
+      }
+    },
+    {
+      "id": "obs_chg10_tool_co",
+      "traceId": "tr_charge_10",
+      "projectId": "prj-refunds",
+      "type": "TOOL",
+      "name": "case-open",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_chg10_agent",
+      "startTime": "2025-08-27T07:15:13.000Z",
+      "endTime": "2025-08-27T07:15:15.000Z",
+      "latency": 2000,
+      "version": "1.0.0",
+      "traceName": "chargeback_task",
+      "tags": [
+        "chargeback"
+      ],
+      "input": "open internal case cb-5010",
+      "output": "case CA-5010 opened",
+      "metadata": {},
+      "statusMessage": ""
+    },
+    {
+      "id": "obs_chg10_span_bw",
+      "traceId": "tr_charge_10",
+      "projectId": "prj-refunds",
+      "type": "SPAN",
+      "name": "bank-watch",
+      "level": "WARN",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_chg10_agent",
+      "startTime": "2025-08-27T07:15:10.000Z",
+      "endTime": "2025-08-27T07:15:13.000Z",
+      "latency": 3000,
+      "version": "1.0.0",
+      "traceName": "chargeback_task",
+      "tags": [
+        "chargeback"
+      ],
+      "input": "watch bank call",
+      "output": "eventually accepted",
+      "metadata": {},
+      "statusMessage": "bank delayed"
+    },
+    {
+      "id": "obs_chg10_tool_r2",
+      "traceId": "tr_charge_10",
+      "projectId": "prj-refunds",
+      "type": "TOOL",
+      "name": "charge-reversal",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_chg10_agent",
+      "startTime": "2025-08-27T07:15:07.000Z",
+      "endTime": "2025-08-27T07:15:10.000Z",
+      "latency": 3000,
+      "version": "1.0.0",
+      "traceName": "chargeback_task",
+      "tags": [
+        "chargeback"
+      ],
+      "input": "reverse chg-5010",
+      "output": "reversed (id rev_5010)",
+      "metadata": {},
+      "statusMessage": ""
+    },
+    {
+      "id": "obs_chg10_gen_s",
+      "traceId": "tr_charge_10",
+      "projectId": "prj-refunds",
+      "type": "GENERATION",
+      "name": "case-summary",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_chg10_agent",
+      "startTime": "2025-08-27T07:15:05.000Z",
+      "endTime": "2025-08-27T07:15:07.000Z",
+      "latency": 2000,
+      "version": "1.0.0",
+      "traceName": "chargeback_task",
+      "tags": [
+        "chargeback"
+      ],
+      "input": "Summarise cb-5010",
+      "output": "Summary written.",
+      "metadata": {},
+      "statusMessage": "",
+      "model": "gpt-4o-mini",
+      "internalModelId": "gpt-4o-mini-2024-07-18",
+      "modelParameters": {
+        "temperature": 0.2
+      },
+      "inputPrice": "0.000150",
+      "outputPrice": "0.000600",
+      "totalPrice": "0.000750",
+      "usageDetails": {
+        "input": 800,
+        "output": 220,
+        "total": 1020
+      },
+      "costDetails": {
+        "input": 0.00012,
+        "output": 0.000132,
+        "total": 0.000252
+      }
+    },
+    {
+      "id": "obs_chg10_tool_r1",
+      "traceId": "tr_charge_10",
+      "projectId": "prj-refunds",
+      "type": "TOOL",
+      "name": "charge-reversal",
+      "level": "ERROR",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_chg10_agent",
+      "startTime": "2025-08-27T07:15:04.000Z",
+      "endTime": "2025-08-27T07:15:05.000Z",
+      "latency": 1000,
+      "version": "1.0.0",
+      "traceName": "chargeback_task",
+      "tags": [
+        "chargeback"
+      ],
+      "input": "reverse chg-5010",
+      "output": "rejected: insufficient funds",
+      "metadata": {},
+      "statusMessage": "bank rejected reversal"
+    },
+    {
+      "id": "obs_chg10_tool_cl",
+      "traceId": "tr_charge_10",
+      "projectId": "prj-refunds",
+      "type": "TOOL",
+      "name": "charge-lookup",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_chg10_agent",
+      "startTime": "2025-08-27T07:15:02.000Z",
+      "endTime": "2025-08-27T07:15:04.000Z",
+      "latency": 2000,
+      "version": "1.0.0",
+      "traceName": "chargeback_task",
+      "tags": [
+        "chargeback"
+      ],
+      "input": "read charge chg-5010",
+      "output": "status: disputed",
+      "metadata": {},
+      "statusMessage": ""
+    },
+    {
+      "id": "obs_chg10_span_l",
+      "traceId": "tr_charge_10",
+      "projectId": "prj-refunds",
+      "type": "SPAN",
+      "name": "ledger-lookup",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_chg10_agent",
+      "startTime": "2025-08-27T07:15:01.000Z",
+      "endTime": "2025-08-27T07:15:02.000Z",
+      "latency": 1000,
+      "version": "1.0.0",
+      "traceName": "chargeback_task",
+      "tags": [
+        "chargeback"
+      ],
+      "input": "lookup charge chg-5010",
+      "output": "charge found",
+      "metadata": {},
+      "statusMessage": ""
+    }
+  ],
+  "meta": {
+    "cursor": "cursor-obs-24"
+  }
+}

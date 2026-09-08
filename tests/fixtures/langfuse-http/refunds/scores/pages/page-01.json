@@ -1,0 +1,142 @@
+{
+  "data": [
+    {
+      "id": "score_tool_1",
+      "projectId": "prj-refunds",
+      "traceId": "tr_refund_1",
+      "name": "tool-appropriateness",
+      "dataType": "BOOLEAN",
+      "value": true,
+      "source": "ANNOTATION",
+      "authorUserId": "reviewer@acme",
+      "timestamp": "2025-08-31T23:45:00.000Z",
+      "environment": "production",
+      "subject": {
+        "kind": "OBSERVATION",
+        "id": "obs_refund_tool_1",
+        "traceId": "tr_refund_1"
+      }
+    },
+    {
+      "id": "score_refund_1",
+      "projectId": "prj-refunds",
+      "traceId": "tr_refund_1",
+      "name": "refund-correctness",
+      "dataType": "NUMERIC",
+      "value": 1,
+      "source": "EVAL",
+      "timestamp": "2025-08-31T23:40:00.000Z",
+      "environment": "production",
+      "subject": {
+        "kind": "TRACE",
+        "id": "tr_refund_1",
+        "traceId": "tr_refund_1"
+      },
+      "comment": "Correctly issued refund"
+    },
+    {
+      "id": "score_refund_2",
+      "projectId": "prj-refunds",
+      "traceId": "tr_refund_2",
+      "name": "refund-correctness",
+      "dataType": "NUMERIC",
+      "value": 1,
+      "source": "EVAL",
+      "timestamp": "2025-08-31T21:30:00.000Z",
+      "environment": "production",
+      "subject": {
+        "kind": "TRACE",
+        "id": "tr_refund_2",
+        "traceId": "tr_refund_2"
+      }
+    },
+    {
+      "id": "score_refund_4",
+      "projectId": "prj-refunds",
+      "traceId": "tr_refund_7",
+      "name": "refund-correctness",
+      "dataType": "NUMERIC",
+      "value": 1,
+      "source": "EVAL",
+      "timestamp": "2025-08-31T20:40:00.000Z",
+      "environment": "production",
+      "subject": {
+        "kind": "TRACE",
+        "id": "tr_refund_7",
+        "traceId": "tr_refund_7"
+      },
+      "comment": "Correctly issued refund"
+    },
+    {
+      "id": "score_refund_5",
+      "projectId": "prj-refunds",
+      "traceId": "tr_refund_8",
+      "name": "refund-correctness",
+      "dataType": "NUMERIC",
+      "value": 1,
+      "source": "EVAL",
+      "timestamp": "2025-08-31T19:50:00.000Z",
+      "environment": "production",
+      "subject": {
+        "kind": "TRACE",
+        "id": "tr_refund_8",
+        "traceId": "tr_refund_8"
+      },
+      "comment": "Correctly issued refund"
+    },
+    {
+      "id": "score_refund_3",
+      "projectId": "prj-refunds",
+      "traceId": "tr_refund_3",
+      "name": "refund-correctness",
+      "dataType": "NUMERIC",
+      "value": 1,
+      "source": "EVAL",
+      "timestamp": "2025-08-31T18:30:00.000Z",
+      "environment": "production",
+      "subject": {
+        "kind": "TRACE",
+        "id": "tr_refund_3",
+        "traceId": "tr_refund_3"
+      }
+    },
+    {
+      "id": "score_doublecall_4",
+      "projectId": "prj-refunds",
+      "traceId": "tr_refund_4",
+      "name": "no-side-effect-retry",
+      "dataType": "BOOLEAN",
+      "value": false,
+      "source": "EVAL",
+      "timestamp": "2025-08-31T15:50:00.000Z",
+      "environment": "production",
+      "subject": {
+        "kind": "TRACE",
+        "id": "tr_refund_4",
+        "traceId": "tr_refund_4"
+      },
+      "comment": "charge-reversal called twice after timeout"
+    },
+    {
+      "id": "score_obs_4",
+      "projectId": "prj-refunds",
+      "traceId": "tr_refund_4",
+      "name": "reversal-accuracy",
+      "dataType": "BOOLEAN",
+      "value": false,
+      "source": "ANNOTATION",
+      "authorUserId": "reviewer@acme",
+      "timestamp": "2025-08-31T15:40:00.000Z",
+      "environment": "production",
+      "subject": {
+        "kind": "OBSERVATION",
+        "id": "obs_refund_tool_8",
+        "traceId": "tr_refund_4"
+      },
+      "comment": "duplicate reversal attempted on chg-881"
+    }
+  ],
+  "meta": {
+    "cursor": "cursor-scores-1"
+  }
+}

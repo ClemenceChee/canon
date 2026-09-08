@@ -1,0 +1,231 @@
+{
+  "data": [
+    {
+      "id": "obs_support_agent_1",
+      "traceId": "tr_refund_5",
+      "projectId": "prj-refunds",
+      "type": "AGENT",
+      "name": "support-agent",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": true,
+      "parentObservationId": null,
+      "startTime": "2025-08-31T12:45:00.000Z",
+      "endTime": "2025-08-31T12:45:14.000Z",
+      "latency": 14000,
+      "version": "1.0.0",
+      "traceName": "refund_task",
+      "tags": [
+        "refund"
+      ],
+      "input": "Refund order R-1005 via quick path.",
+      "output": "Used refund-quick tool for an instant credit.",
+      "metadata": {},
+      "statusMessage": "",
+      "sessionId": "sess_support_1",
+      "userId": "user_9"
+    },
+    {
+      "id": "obs_dsp12_gen_d",
+      "traceId": "tr_dispute_12",
+      "projectId": "prj-refunds",
+      "type": "GENERATION",
+      "name": "decision-letter",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_dsp12_agent",
+      "startTime": "2025-08-31T11:00:16.000Z",
+      "endTime": "2025-08-31T11:00:18.000Z",
+      "latency": 2000,
+      "version": "1.0.0",
+      "traceName": "dispute_task",
+      "tags": [
+        "dispute"
+      ],
+      "input": "Draft decision ds-6012",
+      "output": "Decision letter drafted.",
+      "metadata": {},
+      "statusMessage": "",
+      "model": "gpt-4o-mini",
+      "internalModelId": "gpt-4o-mini-2024-07-18",
+      "modelParameters": {
+        "temperature": 0.2
+      },
+      "inputPrice": "0.000150",
+      "outputPrice": "0.000600",
+      "totalPrice": "0.000750",
+      "usageDetails": {
+        "input": 800,
+        "output": 220,
+        "total": 1020
+      },
+      "costDetails": {
+        "input": 0.00012,
+        "output": 0.000132,
+        "total": 0.000252
+      }
+    },
+    {
+      "id": "obs_dsp12_tool_c",
+      "traceId": "tr_dispute_12",
+      "projectId": "prj-refunds",
+      "type": "TOOL",
+      "name": "dispute-check",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_dsp12_agent",
+      "startTime": "2025-08-31T11:00:13.000Z",
+      "endTime": "2025-08-31T11:00:15.000Z",
+      "latency": 2000,
+      "version": "1.0.0",
+      "traceName": "dispute_task",
+      "tags": [
+        "dispute"
+      ],
+      "input": "assess evidence ds-6012",
+      "output": "evidence ok",
+      "metadata": {},
+      "statusMessage": ""
+    },
+    {
+      "id": "obs_dsp12_tool_e",
+      "traceId": "tr_dispute_12",
+      "projectId": "prj-refunds",
+      "type": "TOOL",
+      "name": "evidence-upload",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_dsp12_agent",
+      "startTime": "2025-08-31T11:00:10.000Z",
+      "endTime": "2025-08-31T11:00:12.000Z",
+      "latency": 2000,
+      "version": "1.0.0",
+      "traceName": "dispute_task",
+      "tags": [
+        "dispute"
+      ],
+      "input": "upload evidence ds-6012",
+      "output": "evidence filed",
+      "metadata": {},
+      "statusMessage": ""
+    },
+    {
+      "id": "obs_dsp12_gen_s",
+      "traceId": "tr_dispute_12",
+      "projectId": "prj-refunds",
+      "type": "GENERATION",
+      "name": "dispute-summary",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_dsp12_agent",
+      "startTime": "2025-08-31T11:00:06.000Z",
+      "endTime": "2025-08-31T11:00:08.000Z",
+      "latency": 2000,
+      "version": "1.0.0",
+      "traceName": "dispute_task",
+      "tags": [
+        "dispute"
+      ],
+      "input": "Summarise dispute ds-6012",
+      "output": "Summary written.",
+      "metadata": {},
+      "statusMessage": "",
+      "model": "gpt-4o-mini",
+      "internalModelId": "gpt-4o-mini-2024-07-18",
+      "modelParameters": {
+        "temperature": 0.2
+      },
+      "inputPrice": "0.000150",
+      "outputPrice": "0.000600",
+      "totalPrice": "0.000750",
+      "usageDetails": {
+        "input": 800,
+        "output": 220,
+        "total": 1020
+      },
+      "costDetails": {
+        "input": 0.00012,
+        "output": 0.000132,
+        "total": 0.000252
+      }
+    },
+    {
+      "id": "obs_dsp12_tool_o",
+      "traceId": "tr_dispute_12",
+      "projectId": "prj-refunds",
+      "type": "TOOL",
+      "name": "dispute-open",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_dsp12_agent",
+      "startTime": "2025-08-31T11:00:03.000Z",
+      "endTime": "2025-08-31T11:00:05.000Z",
+      "latency": 2000,
+      "version": "1.0.0",
+      "traceName": "dispute_task",
+      "tags": [
+        "dispute"
+      ],
+      "input": "open dispute ds-6012",
+      "output": "docket D-6012",
+      "metadata": {},
+      "statusMessage": ""
+    },
+    {
+      "id": "obs_dsp12_span_p",
+      "traceId": "tr_dispute_12",
+      "projectId": "prj-refunds",
+      "type": "SPAN",
+      "name": "policy-lookup",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_dsp12_agent",
+      "startTime": "2025-08-31T11:00:01.000Z",
+      "endTime": "2025-08-31T11:00:02.000Z",
+      "latency": 1000,
+      "version": "1.0.0",
+      "traceName": "dispute_task",
+      "tags": [
+        "dispute"
+      ],
+      "input": "read policy for dispute ds-6012",
+      "output": "policy ok",
+      "metadata": {},
+      "statusMessage": ""
+    },
+    {
+      "id": "obs_dsp12_agent",
+      "traceId": "tr_dispute_12",
+      "projectId": "prj-refunds",
+      "type": "AGENT",
+      "name": "dispute-agent",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": true,
+      "parentObservationId": null,
+      "startTime": "2025-08-31T11:00:00.000Z",
+      "endTime": "2025-08-31T11:00:21.000Z",
+      "latency": 21000,
+      "version": "1.0.0",
+      "traceName": "dispute_task",
+      "tags": [
+        "dispute"
+      ],
+      "input": "Handle dispute ds-6012.",
+      "output": "Dispute processed.",
+      "metadata": {},
+      "statusMessage": "",
+      "sessionId": "sess_dispute_12",
+      "userId": "user_85"
+    }
+  ],
+  "meta": {
+    "cursor": "cursor-obs-6"
+  }
+}

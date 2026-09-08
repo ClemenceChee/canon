@@ -1,0 +1,137 @@
+{
+  "data": [
+    {
+      "id": "score_obs_1",
+      "projectId": "prj-refunds",
+      "traceId": "tr_dispute_1",
+      "name": "evidence-quality",
+      "dataType": "BOOLEAN",
+      "value": true,
+      "source": "ANNOTATION",
+      "authorUserId": "reviewer@acme",
+      "timestamp": "2025-08-30T20:20:00.000Z",
+      "environment": "production",
+      "subject": {
+        "kind": "OBSERVATION",
+        "id": "obs_dispute_tool_2",
+        "traceId": "tr_dispute_1"
+      }
+    },
+    {
+      "id": "score_dispute_2",
+      "projectId": "prj-refunds",
+      "traceId": "tr_dispute_2",
+      "name": "dispute-outcome",
+      "dataType": "NUMERIC",
+      "value": 1,
+      "source": "EVAL",
+      "timestamp": "2025-08-30T17:10:00.000Z",
+      "environment": "production",
+      "subject": {
+        "kind": "TRACE",
+        "id": "tr_dispute_2",
+        "traceId": "tr_dispute_2"
+      }
+    },
+    {
+      "id": "score_dispute_3",
+      "projectId": "prj-refunds",
+      "traceId": "tr_dispute_3",
+      "name": "dispute-outcome",
+      "dataType": "NUMERIC",
+      "value": 1,
+      "source": "EVAL",
+      "timestamp": "2025-08-30T11:50:00.000Z",
+      "environment": "production",
+      "subject": {
+        "kind": "TRACE",
+        "id": "tr_dispute_3",
+        "traceId": "tr_dispute_3"
+      }
+    },
+    {
+      "id": "score_eff_2",
+      "projectId": "prj-refunds",
+      "traceId": "tr_dispute_9",
+      "name": "model-efficiency",
+      "dataType": "NUMERIC",
+      "value": 0.4,
+      "source": "EVAL",
+      "timestamp": "2025-08-30T09:35:00.000Z",
+      "environment": "production",
+      "subject": {
+        "kind": "TRACE",
+        "id": "tr_dispute_9",
+        "traceId": "tr_dispute_9"
+      },
+      "comment": "gpt-4o cost 12x mini with no faster resolution"
+    },
+    {
+      "id": "score_dispute_9",
+      "projectId": "prj-refunds",
+      "traceId": "tr_dispute_9",
+      "name": "dispute-outcome",
+      "dataType": "NUMERIC",
+      "value": 1,
+      "source": "EVAL",
+      "timestamp": "2025-08-30T09:20:00.000Z",
+      "environment": "production",
+      "subject": {
+        "kind": "TRACE",
+        "id": "tr_dispute_9",
+        "traceId": "tr_dispute_9"
+      }
+    },
+    {
+      "id": "score_dispute_4",
+      "projectId": "prj-refunds",
+      "traceId": "tr_dispute_4",
+      "name": "dispute-outcome",
+      "dataType": "NUMERIC",
+      "value": 1,
+      "source": "EVAL",
+      "timestamp": "2025-08-29T17:30:00.000Z",
+      "environment": "production",
+      "subject": {
+        "kind": "TRACE",
+        "id": "tr_dispute_4",
+        "traceId": "tr_dispute_4"
+      }
+    },
+    {
+      "id": "score_dispute_8",
+      "projectId": "prj-refunds",
+      "traceId": "tr_dispute_8",
+      "name": "dispute-outcome",
+      "dataType": "NUMERIC",
+      "value": 1,
+      "source": "EVAL",
+      "timestamp": "2025-08-29T14:50:00.000Z",
+      "environment": "production",
+      "subject": {
+        "kind": "TRACE",
+        "id": "tr_dispute_8",
+        "traceId": "tr_dispute_8"
+      }
+    },
+    {
+      "id": "score_dispute_5",
+      "projectId": "prj-refunds",
+      "traceId": "tr_dispute_5",
+      "name": "dispute-outcome",
+      "dataType": "NUMERIC",
+      "value": 0,
+      "source": "EVAL",
+      "timestamp": "2025-08-29T10:00:00.000Z",
+      "environment": "production",
+      "subject": {
+        "kind": "TRACE",
+        "id": "tr_dispute_5",
+        "traceId": "tr_dispute_5"
+      }
+    }
+  ],
+  "meta": {
+    "cursor": "cursor-scores-3"
+  }
+}

@@ -1,0 +1,247 @@
+{
+  "data": [
+    {
+      "id": "obs_refund_span_6",
+      "traceId": "tr_refund_6",
+      "projectId": "prj-refunds",
+      "type": "SPAN",
+      "name": "post-refund-check",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_refund_agent_6",
+      "startTime": "2025-08-31T09:15:09.000Z",
+      "endTime": "2025-08-31T09:15:10.000Z",
+      "latency": 1000,
+      "version": "1.0.0",
+      "traceName": "refund_task",
+      "tags": [
+        "refund"
+      ],
+      "input": "verify refund posted",
+      "output": "posted",
+      "metadata": {},
+      "statusMessage": ""
+    },
+    {
+      "id": "obs_refund_gen_5",
+      "traceId": "tr_refund_6",
+      "projectId": "prj-refunds",
+      "type": "GENERATION",
+      "name": "refund-summary",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_refund_agent_6",
+      "startTime": "2025-08-31T09:15:06.000Z",
+      "endTime": "2025-08-31T09:15:08.000Z",
+      "latency": 2000,
+      "version": "1.0.0",
+      "traceName": "refund_task",
+      "tags": [
+        "refund"
+      ],
+      "input": "Summarise R-1006",
+      "output": "Full refund of 19.99 issued.",
+      "metadata": {},
+      "statusMessage": "",
+      "model": "gpt-4o",
+      "internalModelId": "gpt-4o-2024-08-06",
+      "modelParameters": {
+        "temperature": 0.2
+      },
+      "inputPrice": "0.002500",
+      "outputPrice": "0.010000",
+      "totalPrice": "0.012500",
+      "usageDetails": {
+        "input": 900,
+        "output": 250,
+        "total": 1150
+      },
+      "costDetails": {
+        "input": 0.00225,
+        "output": 0.0025,
+        "total": 0.00475
+      }
+    },
+    {
+      "id": "obs_refund_tool_9",
+      "traceId": "tr_refund_6",
+      "projectId": "prj-refunds",
+      "type": "TOOL",
+      "name": "refund-standard",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_refund_agent_6",
+      "startTime": "2025-08-31T09:15:02.000Z",
+      "endTime": "2025-08-31T09:15:05.000Z",
+      "latency": 3000,
+      "version": "1.0.0",
+      "traceName": "refund_task",
+      "tags": [
+        "refund"
+      ],
+      "input": "Refund R-1006 amount 19.99",
+      "output": "Refund accepted (id rfnd_994)",
+      "metadata": {},
+      "statusMessage": ""
+    },
+    {
+      "id": "obs_refund_span_6b",
+      "traceId": "tr_refund_6",
+      "projectId": "prj-refunds",
+      "type": "SPAN",
+      "name": "eligibility-check",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_refund_agent_6",
+      "startTime": "2025-08-31T09:15:01.000Z",
+      "endTime": "2025-08-31T09:15:02.000Z",
+      "latency": 1000,
+      "version": "1.0.0",
+      "traceName": "refund_task",
+      "tags": [
+        "refund"
+      ],
+      "input": "order R-1006 eligibility",
+      "output": "eligible",
+      "metadata": {},
+      "statusMessage": ""
+    },
+    {
+      "id": "obs_refund_agent_6",
+      "traceId": "tr_refund_6",
+      "projectId": "prj-refunds",
+      "type": "AGENT",
+      "name": "refund-agent",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": true,
+      "parentObservationId": null,
+      "startTime": "2025-08-31T09:15:00.000Z",
+      "endTime": "2025-08-31T09:15:10.000Z",
+      "latency": 10000,
+      "version": "1.0.0",
+      "traceName": "refund_task",
+      "tags": [
+        "refund"
+      ],
+      "input": "Refund R-1006 no questions asked.",
+      "output": "Full refund issued.",
+      "metadata": {},
+      "statusMessage": "",
+      "sessionId": "sess_refund_6",
+      "userId": "user_31"
+    },
+    {
+      "id": "obs_dsp11_gen_e",
+      "traceId": "tr_dispute_11",
+      "projectId": "prj-refunds",
+      "type": "GENERATION",
+      "name": "escalation-note",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_dsp11_agent",
+      "startTime": "2025-08-31T08:00:18.000Z",
+      "endTime": "2025-08-31T08:00:20.000Z",
+      "latency": 2000,
+      "version": "1.0.0",
+      "traceName": "dispute_task",
+      "tags": [
+        "dispute"
+      ],
+      "input": "Note escalation ds-6011",
+      "output": "Escalation noted.",
+      "metadata": {},
+      "statusMessage": "",
+      "model": "gpt-4o",
+      "internalModelId": "gpt-4o-2024-08-06",
+      "modelParameters": {
+        "temperature": 0.2
+      },
+      "inputPrice": "0.002500",
+      "outputPrice": "0.010000",
+      "totalPrice": "0.012500",
+      "usageDetails": {
+        "input": 900,
+        "output": 250,
+        "total": 1150
+      },
+      "costDetails": {
+        "input": 0.00225,
+        "output": 0.0025,
+        "total": 0.00475
+      }
+    },
+    {
+      "id": "obs_dsp11_gen_d",
+      "traceId": "tr_dispute_11",
+      "projectId": "prj-refunds",
+      "type": "GENERATION",
+      "name": "decision-letter",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_dsp11_agent",
+      "startTime": "2025-08-31T08:00:16.000Z",
+      "endTime": "2025-08-31T08:00:18.000Z",
+      "latency": 2000,
+      "version": "1.0.0",
+      "traceName": "dispute_task",
+      "tags": [
+        "dispute"
+      ],
+      "input": "Draft decision ds-6011",
+      "output": "Escalation recommended.",
+      "metadata": {},
+      "statusMessage": "",
+      "model": "gpt-4o",
+      "internalModelId": "gpt-4o-2024-08-06",
+      "modelParameters": {
+        "temperature": 0.2
+      },
+      "inputPrice": "0.002500",
+      "outputPrice": "0.010000",
+      "totalPrice": "0.012500",
+      "usageDetails": {
+        "input": 900,
+        "output": 250,
+        "total": 1150
+      },
+      "costDetails": {
+        "input": 0.00225,
+        "output": 0.0025,
+        "total": 0.00475
+      }
+    },
+    {
+      "id": "obs_dsp11_tool_c",
+      "traceId": "tr_dispute_11",
+      "projectId": "prj-refunds",
+      "type": "TOOL",
+      "name": "dispute-check",
+      "level": "WARN",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_dsp11_agent",
+      "startTime": "2025-08-31T08:00:13.000Z",
+      "endTime": "2025-08-31T08:00:15.000Z",
+      "latency": 2000,
+      "version": "1.0.0",
+      "traceName": "dispute_task",
+      "tags": [
+        "dispute"
+      ],
+      "input": "assess evidence ds-6011",
+      "output": "evidence insufficient",
+      "metadata": {},
+      "statusMessage": "evidence insufficient"
+    }
+  ],
+  "meta": {
+    "cursor": "cursor-obs-7"
+  }
+}

@@ -1,0 +1,229 @@
+{
+  "data": [
+    {
+      "id": "obs_refund_gen_3",
+      "traceId": "tr_refund_3",
+      "projectId": "prj-refunds",
+      "type": "GENERATION",
+      "name": "escalation-note",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_refund_agent_3",
+      "startTime": "2025-08-31T18:05:11.000Z",
+      "endTime": "2025-08-31T18:05:13.000Z",
+      "latency": 2000,
+      "version": "1.0.0",
+      "traceName": "refund_task",
+      "tags": [
+        "refund"
+      ],
+      "input": "Write escalation note for first-attempt gateway decline",
+      "output": "First attempt declined; retried successfully.",
+      "metadata": {},
+      "statusMessage": "",
+      "model": "gpt-4o",
+      "internalModelId": "gpt-4o-2024-08-06",
+      "modelParameters": {
+        "temperature": 0.2
+      },
+      "inputPrice": "0.002500",
+      "outputPrice": "0.010000",
+      "totalPrice": "0.012500",
+      "usageDetails": {
+        "input": 900,
+        "output": 250,
+        "total": 1150
+      },
+      "costDetails": {
+        "input": 0.00225,
+        "output": 0.0025,
+        "total": 0.00475
+      }
+    },
+    {
+      "id": "obs_refund_tool_5",
+      "traceId": "tr_refund_3",
+      "projectId": "prj-refunds",
+      "type": "TOOL",
+      "name": "refund-standard",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_refund_agent_3",
+      "startTime": "2025-08-31T18:05:07.000Z",
+      "endTime": "2025-08-31T18:05:10.000Z",
+      "latency": 3000,
+      "version": "1.0.0",
+      "traceName": "refund_task",
+      "tags": [
+        "refund"
+      ],
+      "input": "Retry refund R-1003",
+      "output": "Refund accepted (id rfnd_993)",
+      "metadata": {},
+      "statusMessage": ""
+    },
+    {
+      "id": "obs_refund_tool_4",
+      "traceId": "tr_refund_3",
+      "projectId": "prj-refunds",
+      "type": "TOOL",
+      "name": "refund-standard",
+      "level": "ERROR",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_refund_agent_3",
+      "startTime": "2025-08-31T18:05:02.000Z",
+      "endTime": "2025-08-31T18:05:04.000Z",
+      "latency": 2000,
+      "version": "1.0.0",
+      "traceName": "refund_task",
+      "tags": [
+        "refund"
+      ],
+      "input": "Refund R-1003 amount 12.30",
+      "output": "declined: gateway timeout",
+      "metadata": {},
+      "statusMessage": "payment gateway declined"
+    },
+    {
+      "id": "obs_refund_span_4",
+      "traceId": "tr_refund_3",
+      "projectId": "prj-refunds",
+      "type": "SPAN",
+      "name": "gateway-watch",
+      "level": "WARN",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_refund_agent_3",
+      "startTime": "2025-08-31T18:05:02.000Z",
+      "endTime": "2025-08-31T18:05:06.000Z",
+      "latency": 4000,
+      "version": "1.0.0",
+      "traceName": "refund_task",
+      "tags": [
+        "refund"
+      ],
+      "input": "watch gateway call",
+      "output": "declined then healthy",
+      "metadata": {},
+      "statusMessage": "gateway declined observed"
+    },
+    {
+      "id": "obs_refund_agent_3",
+      "traceId": "tr_refund_3",
+      "projectId": "prj-refunds",
+      "type": "AGENT",
+      "name": "refund-agent",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": true,
+      "parentObservationId": null,
+      "startTime": "2025-08-31T18:05:00.000Z",
+      "endTime": "2025-08-31T18:05:16.000Z",
+      "latency": 16000,
+      "version": "1.0.0",
+      "traceName": "refund_task",
+      "tags": [
+        "refund"
+      ],
+      "input": "Refund order R-1003 — gateway declined the first attempt.",
+      "output": "Retried the refund tool after a gateway decline; escalated.",
+      "metadata": {},
+      "statusMessage": "",
+      "sessionId": "sess_refund_3",
+      "userId": "user_12"
+    },
+    {
+      "id": "obs_refund_tool_6b",
+      "traceId": "tr_refund_4",
+      "projectId": "prj-refunds",
+      "type": "TOOL",
+      "name": "notify-customer",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_refund_agent_4",
+      "startTime": "2025-08-31T15:30:13.000Z",
+      "endTime": "2025-08-31T15:30:14.000Z",
+      "latency": 1000,
+      "version": "1.0.0",
+      "traceName": "refund_task",
+      "tags": [
+        "refund"
+      ],
+      "input": "notify R-1004",
+      "output": "notified",
+      "metadata": {},
+      "statusMessage": ""
+    },
+    {
+      "id": "obs_refund_gen_4",
+      "traceId": "tr_refund_4",
+      "projectId": "prj-refunds",
+      "type": "GENERATION",
+      "name": "refund-summary",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_refund_agent_4",
+      "startTime": "2025-08-31T15:30:10.000Z",
+      "endTime": "2025-08-31T15:30:12.000Z",
+      "latency": 2000,
+      "version": "1.0.0",
+      "traceName": "refund_task",
+      "tags": [
+        "refund"
+      ],
+      "input": "Summarise R-1004 double-call",
+      "output": "Charge reversed after one timeout retry.",
+      "metadata": {},
+      "statusMessage": "",
+      "model": "gpt-4o",
+      "internalModelId": "gpt-4o-2024-08-06",
+      "modelParameters": {
+        "temperature": 0.2
+      },
+      "inputPrice": "0.002500",
+      "outputPrice": "0.010000",
+      "totalPrice": "0.012500",
+      "usageDetails": {
+        "input": 900,
+        "output": 250,
+        "total": 1150
+      },
+      "costDetails": {
+        "input": 0.00225,
+        "output": 0.0025,
+        "total": 0.00475
+      }
+    },
+    {
+      "id": "obs_refund_tool_8",
+      "traceId": "tr_refund_4",
+      "projectId": "prj-refunds",
+      "type": "TOOL",
+      "name": "charge-reversal",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_refund_agent_4",
+      "startTime": "2025-08-31T15:30:08.000Z",
+      "endTime": "2025-08-31T15:30:09.000Z",
+      "latency": 1000,
+      "version": "1.0.0",
+      "traceName": "refund_task",
+      "tags": [
+        "refund"
+      ],
+      "input": "retry reverse charge chg-881",
+      "output": "reversed (id rev_55)",
+      "metadata": {},
+      "statusMessage": ""
+    }
+  ],
+  "meta": {
+    "cursor": "cursor-obs-4"
+  }
+}

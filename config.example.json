@@ -1,0 +1,20 @@
+{
+  "schema": "canon/config/v1",
+  "connection": {
+    "host": "https://cloud.langfuse.com",
+    "baseUrl": "https://cloud.langfuse.com/api/public",
+    "projectId": "prj-example",
+    "publicKey": "pk-lf-placeholder",
+    "secretKey": "sk-lf-placeholder",
+    "connectedAt": "2025-09-01T00:00:00.000Z"
+  },
+  "settings": {
+    "environment": ["production"],
+    "redact": { "ingest": false, "views": true },
+    "operator": { "name": "" },
+    "sync": { "incrementalOverlapHours": 24, "backfillWindowDays": 1, "politeDelayMs": 0 },
+    "http": { "requestTimeoutMs": 30000, "maxRetries": 5, "retryBaseMs": 1000 },
+    "decay": { "proposalTtlDays": 90 },
+    "analysis": { "minTraces": 3, "maxProposalsPerRun": 25 }
+  }
+}

@@ -1,0 +1,229 @@
+{
+  "data": [
+    {
+      "id": "obs_refund_gen_2b",
+      "traceId": "tr_refund_2",
+      "projectId": "prj-refunds",
+      "type": "GENERATION",
+      "name": "refund-reason",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_refund_agent_2",
+      "startTime": "2025-08-31T21:10:04.000Z",
+      "endTime": "2025-08-31T21:10:05.000Z",
+      "latency": 1000,
+      "version": "1.0.0",
+      "traceName": "refund_task",
+      "tags": [
+        "refund"
+      ],
+      "input": "Explain refund reason for R-1002",
+      "output": "Damaged item; partial refund.",
+      "metadata": {},
+      "statusMessage": "",
+      "model": "gpt-4o-mini",
+      "internalModelId": "gpt-4o-mini-2024-07-18",
+      "modelParameters": {
+        "temperature": 0.2
+      },
+      "inputPrice": "0.000150",
+      "outputPrice": "0.000600",
+      "totalPrice": "0.000750",
+      "usageDetails": {
+        "input": 800,
+        "output": 220,
+        "total": 1020
+      },
+      "costDetails": {
+        "input": 0.00012,
+        "output": 0.000132,
+        "total": 0.000252
+      }
+    },
+    {
+      "id": "obs_refund_tool_2",
+      "traceId": "tr_refund_2",
+      "projectId": "prj-refunds",
+      "type": "TOOL",
+      "name": "lookup-customer",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_refund_agent_2",
+      "startTime": "2025-08-31T21:10:03.000Z",
+      "endTime": "2025-08-31T21:10:04.000Z",
+      "latency": 1000,
+      "version": "1.0.0",
+      "traceName": "refund_task",
+      "tags": [
+        "refund"
+      ],
+      "input": "customer 42 account",
+      "output": "account found",
+      "metadata": {},
+      "statusMessage": ""
+    },
+    {
+      "id": "obs_refund_span_2",
+      "traceId": "tr_refund_2",
+      "projectId": "prj-refunds",
+      "type": "SPAN",
+      "name": "damage-assessment",
+      "level": "WARN",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_refund_agent_2",
+      "startTime": "2025-08-31T21:10:01.000Z",
+      "endTime": "2025-08-31T21:10:03.000Z",
+      "latency": 2000,
+      "version": "1.0.0",
+      "traceName": "refund_task",
+      "tags": [
+        "refund"
+      ],
+      "input": "photo review",
+      "output": "accepted after re-review",
+      "metadata": {},
+      "statusMessage": "damage photo unclear"
+    },
+    {
+      "id": "obs_refund_agent_2",
+      "traceId": "tr_refund_2",
+      "projectId": "prj-refunds",
+      "type": "AGENT",
+      "name": "refund-agent",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": true,
+      "parentObservationId": null,
+      "startTime": "2025-08-31T21:10:00.000Z",
+      "endTime": "2025-08-31T21:10:14.000Z",
+      "latency": 14000,
+      "version": "1.0.0",
+      "traceName": "refund_task",
+      "tags": [
+        "refund"
+      ],
+      "input": "Refund order R-1002, customer received damaged item.",
+      "output": "Refund plus replacement label issued.",
+      "metadata": {},
+      "statusMessage": "",
+      "sessionId": "sess_refund_2",
+      "userId": "user_42"
+    },
+    {
+      "id": "obs_refund7_notify",
+      "traceId": "tr_refund_7",
+      "projectId": "prj-refunds",
+      "type": "TOOL",
+      "name": "notify-customer",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_refund7_agent",
+      "startTime": "2025-08-31T20:30:11.000Z",
+      "endTime": "2025-08-31T20:30:12.000Z",
+      "latency": 1000,
+      "version": "1.0.0",
+      "traceName": "refund_task",
+      "tags": [
+        "refund"
+      ],
+      "input": "notify customer of refund R-7007",
+      "output": "email sent",
+      "metadata": {},
+      "statusMessage": ""
+    },
+    {
+      "id": "obs_refund7_gen",
+      "traceId": "tr_refund_7",
+      "projectId": "prj-refunds",
+      "type": "GENERATION",
+      "name": "refund-summary",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_refund7_agent",
+      "startTime": "2025-08-31T20:30:08.000Z",
+      "endTime": "2025-08-31T20:30:10.000Z",
+      "latency": 2000,
+      "version": "1.0.0",
+      "traceName": "refund_task",
+      "tags": [
+        "refund"
+      ],
+      "input": "Summarise refund R-7007 outcome",
+      "output": "Refund issued via standard flow.",
+      "metadata": {},
+      "statusMessage": "",
+      "model": "gpt-4o-mini",
+      "internalModelId": "gpt-4o-mini-2024-07-18",
+      "modelParameters": {
+        "temperature": 0.2
+      },
+      "inputPrice": "0.000150",
+      "outputPrice": "0.000600",
+      "totalPrice": "0.000750",
+      "usageDetails": {
+        "input": 800,
+        "output": 220,
+        "total": 1020
+      },
+      "costDetails": {
+        "input": 0.00012,
+        "output": 0.000132,
+        "total": 0.000252
+      }
+    },
+    {
+      "id": "obs_refund7_tool",
+      "traceId": "tr_refund_7",
+      "projectId": "prj-refunds",
+      "type": "TOOL",
+      "name": "refund-standard",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_refund7_agent",
+      "startTime": "2025-08-31T20:30:03.000Z",
+      "endTime": "2025-08-31T20:30:06.000Z",
+      "latency": 3000,
+      "version": "1.0.0",
+      "traceName": "refund_task",
+      "tags": [
+        "refund"
+      ],
+      "input": "refund order O-7007",
+      "output": "refund scheduled (id rf_7007)",
+      "metadata": {},
+      "statusMessage": ""
+    },
+    {
+      "id": "obs_refund7_span",
+      "traceId": "tr_refund_7",
+      "projectId": "prj-refunds",
+      "type": "SPAN",
+      "name": "post-refund-check",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_refund7_agent",
+      "startTime": "2025-08-31T20:30:01.000Z",
+      "endTime": "2025-08-31T20:30:02.000Z",
+      "latency": 1000,
+      "version": "1.0.0",
+      "traceName": "refund_task",
+      "tags": [
+        "refund"
+      ],
+      "input": "verify refund R-7007",
+      "output": "ok",
+      "metadata": {},
+      "statusMessage": ""
+    }
+  ],
+  "meta": {
+    "cursor": "cursor-obs-2"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "schema": "canon/audit/v1",
+  "projectId": "prj-refunds",
+  "generatedAt": "2025-09-01T12:00:00.000Z",
+  "events": 3,
+  "connectAt": "2025-09-01T12:00:00.000Z",
+  "promoteCount": 1,
+  "rejectCount": 0,
+  "policyChain": [
+    {
+      "ruleKey": "tool-choice-refund-task-refund-standard",
+      "version": 1,
+      "ratifiedBy": "tester",
+      "ratifiedAt": "2025-09-01T12:00:00.000Z",
+      "originProposalId": "prop_r1",
+      "evidenceTraceIds": 1
+    }
+  ]
+}

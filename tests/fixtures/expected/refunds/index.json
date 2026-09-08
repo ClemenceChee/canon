@@ -1,0 +1,1079 @@
+{
+  "schema": "canon/index/v1",
+  "builtAt": "2025-09-01T12:00:00.000Z",
+  "projectId": "prj-refunds",
+  "traceCount": 30,
+  "observationCount": 246,
+  "traces": {
+    "tr_refund_1": {
+      "rootObservationId": "obs_refund_agent_1",
+      "agentId": "refund-agent",
+      "taskKey": "refund_task",
+      "environment": "production",
+      "startTime": "2025-08-31T23:20:00.000Z",
+      "endTime": "2025-08-31T23:20:12.000Z",
+      "outcome": "unknown",
+      "lineFrom": 1,
+      "lineTo": 4
+    },
+    "tr_refund_2": {
+      "rootObservationId": "obs_refund_agent_2",
+      "agentId": "refund-agent",
+      "taskKey": "refund_task",
+      "environment": "production",
+      "startTime": "2025-08-31T21:10:00.000Z",
+      "endTime": "2025-08-31T21:10:14.000Z",
+      "outcome": "unknown",
+      "lineFrom": 5,
+      "lineTo": 12
+    },
+    "tr_refund_7": {
+      "rootObservationId": "obs_refund7_agent",
+      "agentId": "refund-agent",
+      "taskKey": "refund_task",
+      "environment": "production",
+      "startTime": "2025-08-31T20:30:00.000Z",
+      "endTime": "2025-08-31T20:30:13.000Z",
+      "outcome": "unknown",
+      "lineFrom": 13,
+      "lineTo": 17
+    },
+    "tr_refund_8": {
+      "rootObservationId": "obs_refund8_agent",
+      "agentId": "refund-agent",
+      "taskKey": "refund_task",
+      "environment": "production",
+      "startTime": "2025-08-31T19:40:00.000Z",
+      "endTime": "2025-08-31T19:40:13.000Z",
+      "outcome": "unknown",
+      "lineFrom": 18,
+      "lineTo": 22
+    },
+    "tr_refund_3": {
+      "rootObservationId": "obs_refund_agent_3",
+      "agentId": "refund-agent",
+      "taskKey": "refund_task",
+      "environment": "production",
+      "startTime": "2025-08-31T18:05:00.000Z",
+      "endTime": "2025-08-31T18:05:16.000Z",
+      "outcome": "unknown",
+      "lineFrom": 23,
+      "lineTo": 29
+    },
+    "tr_refund_4": {
+      "rootObservationId": "obs_refund_agent_4",
+      "agentId": "refund-agent",
+      "taskKey": "refund_task",
+      "environment": "production",
+      "startTime": "2025-08-31T15:30:00.000Z",
+      "endTime": "2025-08-31T15:30:14.000Z",
+      "outcome": "unknown",
+      "lineFrom": 30,
+      "lineTo": 35
+    },
+    "tr_refund_5": {
+      "rootObservationId": "obs_support_agent_1",
+      "agentId": "support-agent",
+      "taskKey": "refund_task",
+      "environment": "production",
+      "startTime": "2025-08-31T12:45:00.000Z",
+      "endTime": "2025-08-31T12:45:14.000Z",
+      "outcome": "unknown",
+      "lineFrom": 36,
+      "lineTo": 41
+    },
+    "tr_dispute_12": {
+      "rootObservationId": "obs_dsp12_agent",
+      "agentId": "dispute-agent",
+      "taskKey": "dispute_task",
+      "environment": "production",
+      "startTime": "2025-08-31T11:00:00.000Z",
+      "endTime": "2025-08-31T11:00:21.000Z",
+      "outcome": "unknown",
+      "lineFrom": 42,
+      "lineTo": 48
+    },
+    "tr_refund_6": {
+      "rootObservationId": "obs_refund_agent_6",
+      "agentId": "refund-agent",
+      "taskKey": "refund_task",
+      "environment": "production",
+      "startTime": "2025-08-31T09:15:00.000Z",
+      "endTime": "2025-08-31T09:15:10.000Z",
+      "outcome": "unknown",
+      "lineFrom": 49,
+      "lineTo": 53
+    },
+    "tr_dispute_11": {
+      "rootObservationId": "obs_dsp11_agent",
+      "agentId": "dispute-agent",
+      "taskKey": "dispute_task",
+      "environment": "production",
+      "startTime": "2025-08-31T08:00:00.000Z",
+      "endTime": "2025-08-31T08:00:21.000Z",
+      "outcome": "unknown",
+      "lineFrom": 54,
+      "lineTo": 61
+    },
+    "tr_dispute_10": {
+      "rootObservationId": "obs_dsp10_agent",
+      "agentId": "dispute-agent",
+      "taskKey": "dispute_task",
+      "environment": "production",
+      "startTime": "2025-08-30T22:30:00.000Z",
+      "endTime": "2025-08-30T22:30:21.000Z",
+      "outcome": "unknown",
+      "lineFrom": 62,
+      "lineTo": 69
+    },
+    "tr_dispute_1": {
+      "rootObservationId": "obs_dispute_agent_1",
+      "agentId": "dispute-agent",
+      "taskKey": "dispute_task",
+      "environment": "production",
+      "startTime": "2025-08-30T20:00:00.000Z",
+      "endTime": "2025-08-30T20:00:20.000Z",
+      "outcome": "unknown",
+      "lineFrom": 70,
+      "lineTo": 77
+    },
+    "tr_dispute_2": {
+      "rootObservationId": "obs_dispute_agent_2",
+      "agentId": "dispute-agent",
+      "taskKey": "dispute_task",
+      "environment": "production",
+      "startTime": "2025-08-30T16:40:00.000Z",
+      "endTime": "2025-08-30T16:40:21.000Z",
+      "outcome": "unknown",
+      "lineFrom": 78,
+      "lineTo": 85
+    },
+    "tr_dispute_3": {
+      "rootObservationId": "obs_dispute_agent_3",
+      "agentId": "dispute-agent",
+      "taskKey": "dispute_task",
+      "environment": "production",
+      "startTime": "2025-08-30T11:20:00.000Z",
+      "endTime": "2025-08-30T11:20:17.000Z",
+      "outcome": "unknown",
+      "lineFrom": 86,
+      "lineTo": 94
+    },
+    "tr_dispute_9": {
+      "rootObservationId": "obs_dsp9_agent",
+      "agentId": "dispute-agent",
+      "taskKey": "dispute_task",
+      "environment": "production",
+      "startTime": "2025-08-30T09:00:00.000Z",
+      "endTime": "2025-08-30T09:00:21.000Z",
+      "outcome": "unknown",
+      "lineFrom": 95,
+      "lineTo": 102
+    },
+    "tr_dispute_4": {
+      "rootObservationId": "obs_dispute_agent_4",
+      "agentId": "dispute-agent",
+      "taskKey": "dispute_task",
+      "environment": "production",
+      "startTime": "2025-08-29T17:00:00.000Z",
+      "endTime": "2025-08-29T17:00:18.000Z",
+      "outcome": "unknown",
+      "lineFrom": 103,
+      "lineTo": 111
+    },
+    "tr_dispute_8": {
+      "rootObservationId": "obs_dsp8_agent",
+      "agentId": "dispute-agent",
+      "taskKey": "dispute_task",
+      "environment": "production",
+      "startTime": "2025-08-29T14:30:00.000Z",
+      "endTime": "2025-08-29T14:30:21.000Z",
+      "outcome": "unknown",
+      "lineFrom": 112,
+      "lineTo": 119
+    },
+    "tr_dispute_5": {
+      "rootObservationId": "obs_dispute_agent_5",
+      "agentId": "dispute-agent",
+      "taskKey": "dispute_task",
+      "environment": "production",
+      "startTime": "2025-08-29T09:30:00.000Z",
+      "endTime": "2025-08-29T09:30:19.000Z",
+      "outcome": "unknown",
+      "lineFrom": 120,
+      "lineTo": 127
+    },
+    "tr_dispute_7": {
+      "rootObservationId": "obs_dsp7_agent",
+      "agentId": "dispute-agent",
+      "taskKey": "dispute_task",
+      "environment": "production",
+      "startTime": "2025-08-29T06:00:00.000Z",
+      "endTime": "2025-08-29T06:00:21.000Z",
+      "outcome": "unknown",
+      "lineFrom": 128,
+      "lineTo": 135
+    },
+    "tr_charge_1": {
+      "rootObservationId": "obs_charge_agent_1",
+      "agentId": "chargeback-agent",
+      "taskKey": "chargeback_task",
+      "environment": "production",
+      "startTime": "2025-08-28T19:00:00.000Z",
+      "endTime": "2025-08-28T19:00:22.000Z",
+      "outcome": "unknown",
+      "lineFrom": 136,
+      "lineTo": 145
+    },
+    "tr_dispute_6": {
+      "rootObservationId": "obs_dsp6_agent",
+      "agentId": "dispute-agent",
+      "taskKey": "dispute_task",
+      "environment": "production",
+      "startTime": "2025-08-28T14:00:00.000Z",
+      "endTime": "2025-08-28T14:00:21.000Z",
+      "outcome": "unknown",
+      "lineFrom": 146,
+      "lineTo": 153
+    },
+    "tr_charge_2": {
+      "rootObservationId": "obs_charge_agent_2",
+      "agentId": "chargeback-agent",
+      "taskKey": "chargeback_task",
+      "environment": "production",
+      "startTime": "2025-08-28T10:30:00.000Z",
+      "endTime": "2025-08-28T10:30:19.000Z",
+      "outcome": "unknown",
+      "lineFrom": 154,
+      "lineTo": 162
+    },
+    "tr_charge_3": {
+      "rootObservationId": "obs_charge_agent_3",
+      "agentId": "chargeback-agent",
+      "taskKey": "chargeback_task",
+      "environment": "production",
+      "startTime": "2025-08-27T16:00:00.000Z",
+      "endTime": "2025-08-27T16:00:20.000Z",
+      "outcome": "unknown",
+      "lineFrom": 163,
+      "lineTo": 172
+    },
+    "tr_charge_4": {
+      "rootObservationId": "obs_charge_agent_4",
+      "agentId": "chargeback-agent",
+      "taskKey": "chargeback_task",
+      "environment": "production",
+      "startTime": "2025-08-27T08:30:00.000Z",
+      "endTime": "2025-08-27T08:30:22.000Z",
+      "outcome": "unknown",
+      "lineFrom": 173,
+      "lineTo": 183
+    },
+    "tr_charge_10": {
+      "rootObservationId": "obs_chg10_agent",
+      "agentId": "chargeback-agent",
+      "taskKey": "chargeback_task",
+      "environment": "production",
+      "startTime": "2025-08-27T07:15:00.000Z",
+      "endTime": "2025-08-27T07:15:24.000Z",
+      "outcome": "unknown",
+      "lineFrom": 184,
+      "lineTo": 193
+    },
+    "tr_charge_9": {
+      "rootObservationId": "obs_chg9_agent",
+      "agentId": "chargeback-agent",
+      "taskKey": "chargeback_task",
+      "environment": "production",
+      "startTime": "2025-08-27T06:05:00.000Z",
+      "endTime": "2025-08-27T06:05:24.000Z",
+      "outcome": "unknown",
+      "lineFrom": 194,
+      "lineTo": 204
+    },
+    "tr_charge_8": {
+      "rootObservationId": "obs_chg8_agent",
+      "agentId": "chargeback-agent",
+      "taskKey": "chargeback_task",
+      "environment": "production",
+      "startTime": "2025-08-27T04:45:00.000Z",
+      "endTime": "2025-08-27T04:45:24.000Z",
+      "outcome": "unknown",
+      "lineFrom": 205,
+      "lineTo": 215
+    },
+    "tr_charge_7": {
+      "rootObservationId": "obs_chg7_agent",
+      "agentId": "chargeback-agent",
+      "taskKey": "chargeback_task",
+      "environment": "production",
+      "startTime": "2025-08-27T03:30:00.000Z",
+      "endTime": "2025-08-27T03:30:24.000Z",
+      "outcome": "unknown",
+      "lineFrom": 216,
+      "lineTo": 226
+    },
+    "tr_charge_6": {
+      "rootObservationId": "obs_chg6_agent",
+      "agentId": "chargeback-agent",
+      "taskKey": "chargeback_task",
+      "environment": "production",
+      "startTime": "2025-08-27T02:20:00.000Z",
+      "endTime": "2025-08-27T02:20:24.000Z",
+      "outcome": "unknown",
+      "lineFrom": 227,
+      "lineTo": 236
+    },
+    "tr_charge_5": {
+      "rootObservationId": "obs_chg5_agent",
+      "agentId": "chargeback-agent",
+      "taskKey": "chargeback_task",
+      "environment": "production",
+      "startTime": "2025-08-27T01:10:00.000Z",
+      "endTime": "2025-08-27T01:10:24.000Z",
+      "outcome": "unknown",
+      "lineFrom": 237,
+      "lineTo": 246
+    }
+  },
+  "observations": {
+    "obs_refund_gen_1": {
+      "line": 1
+    },
+    "obs_refund_tool_1": {
+      "line": 2
+    },
+    "obs_refund_span_1": {
+      "line": 3
+    },
+    "obs_refund_agent_1": {
+      "line": 4
+    },
+    "obs_refund_span_3": {
+      "line": 5
+    },
+    "obs_refund_span_2b": {
+      "line": 6
+    },
+    "obs_refund_gen_2": {
+      "line": 7
+    },
+    "obs_refund_tool_3": {
+      "line": 8
+    },
+    "obs_refund_gen_2b": {
+      "line": 9
+    },
+    "obs_refund_tool_2": {
+      "line": 10
+    },
+    "obs_refund_span_2": {
+      "line": 11
+    },
+    "obs_refund_agent_2": {
+      "line": 12
+    },
+    "obs_refund7_notify": {
+      "line": 13
+    },
+    "obs_refund7_gen": {
+      "line": 14
+    },
+    "obs_refund7_tool": {
+      "line": 15
+    },
+    "obs_refund7_span": {
+      "line": 16
+    },
+    "obs_refund7_agent": {
+      "line": 17
+    },
+    "obs_refund8_notify": {
+      "line": 18
+    },
+    "obs_refund8_gen": {
+      "line": 19
+    },
+    "obs_refund8_tool": {
+      "line": 20
+    },
+    "obs_refund8_span": {
+      "line": 21
+    },
+    "obs_refund8_agent": {
+      "line": 22
+    },
+    "obs_refund_span_3b": {
+      "line": 23
+    },
+    "obs_refund_tool_6": {
+      "line": 24
+    },
+    "obs_refund_gen_3": {
+      "line": 25
+    },
+    "obs_refund_tool_5": {
+      "line": 26
+    },
+    "obs_refund_tool_4": {
+      "line": 27
+    },
+    "obs_refund_span_4": {
+      "line": 28
+    },
+    "obs_refund_agent_3": {
+      "line": 29
+    },
+    "obs_refund_tool_6b": {
+      "line": 30
+    },
+    "obs_refund_gen_4": {
+      "line": 31
+    },
+    "obs_refund_tool_8": {
+      "line": 32
+    },
+    "obs_refund_tool_7": {
+      "line": 33
+    },
+    "obs_refund_span_5": {
+      "line": 34
+    },
+    "obs_refund_agent_4": {
+      "line": 35
+    },
+    "obs_support_span_1": {
+      "line": 36
+    },
+    "obs_support_gen_1": {
+      "line": 37
+    },
+    "obs_support_tool_2": {
+      "line": 38
+    },
+    "obs_support_tool_1": {
+      "line": 39
+    },
+    "obs_support_span_1b": {
+      "line": 40
+    },
+    "obs_support_agent_1": {
+      "line": 41
+    },
+    "obs_dsp12_gen_d": {
+      "line": 42
+    },
+    "obs_dsp12_tool_c": {
+      "line": 43
+    },
+    "obs_dsp12_tool_e": {
+      "line": 44
+    },
+    "obs_dsp12_gen_s": {
+      "line": 45
+    },
+    "obs_dsp12_tool_o": {
+      "line": 46
+    },
+    "obs_dsp12_span_p": {
+      "line": 47
+    },
+    "obs_dsp12_agent": {
+      "line": 48
+    },
+    "obs_refund_span_6": {
+      "line": 49
+    },
+    "obs_refund_gen_5": {
+      "line": 50
+    },
+    "obs_refund_tool_9": {
+      "line": 51
+    },
+    "obs_refund_span_6b": {
+      "line": 52
+    },
+    "obs_refund_agent_6": {
+      "line": 53
+    },
+    "obs_dsp11_gen_e": {
+      "line": 54
+    },
+    "obs_dsp11_gen_d": {
+      "line": 55
+    },
+    "obs_dsp11_tool_c": {
+      "line": 56
+    },
+    "obs_dsp11_tool_e": {
+      "line": 57
+    },
+    "obs_dsp11_gen_s": {
+      "line": 58
+    },
+    "obs_dsp11_tool_o": {
+      "line": 59
+    },
+    "obs_dsp11_span_p": {
+      "line": 60
+    },
+    "obs_dsp11_agent": {
+      "line": 61
+    },
+    "obs_dsp10_gen_e": {
+      "line": 62
+    },
+    "obs_dsp10_gen_d": {
+      "line": 63
+    },
+    "obs_dsp10_tool_c": {
+      "line": 64
+    },
+    "obs_dsp10_tool_e": {
+      "line": 65
+    },
+    "obs_dsp10_gen_s": {
+      "line": 66
+    },
+    "obs_dsp10_tool_o": {
+      "line": 67
+    },
+    "obs_dsp10_span_p": {
+      "line": 68
+    },
+    "obs_dsp10_agent": {
+      "line": 69
+    },
+    "obs_dispute_gen_2": {
+      "line": 70
+    },
+    "obs_dispute_tool_3": {
+      "line": 71
+    },
+    "obs_dispute_gen_1": {
+      "line": 72
+    },
+    "obs_dispute_span_1b": {
+      "line": 73
+    },
+    "obs_dispute_tool_2": {
+      "line": 74
+    },
+    "obs_dispute_tool_1": {
+      "line": 75
+    },
+    "obs_dispute_span_1": {
+      "line": 76
+    },
+    "obs_dispute_agent_1": {
+      "line": 77
+    },
+    "obs_dispute_span_3": {
+      "line": 78
+    },
+    "obs_dispute_gen_4": {
+      "line": 79
+    },
+    "obs_dispute_tool_6": {
+      "line": 80
+    },
+    "obs_dispute_gen_3": {
+      "line": 81
+    },
+    "obs_dispute_tool_5": {
+      "line": 82
+    },
+    "obs_dispute_tool_4": {
+      "line": 83
+    },
+    "obs_dispute_span_2": {
+      "line": 84
+    },
+    "obs_dispute_agent_2": {
+      "line": 85
+    },
+    "obs_dispute_span_4b": {
+      "line": 86
+    },
+    "obs_dispute_tool_9": {
+      "line": 87
+    },
+    "obs_dispute_gen_6": {
+      "line": 88
+    },
+    "obs_dispute_tool_8": {
+      "line": 89
+    },
+    "obs_dispute_gen_5": {
+      "line": 90
+    },
+    "obs_dispute_gen_5b": {
+      "line": 91
+    },
+    "obs_dispute_tool_7": {
+      "line": 92
+    },
+    "obs_dispute_span_4": {
+      "line": 93
+    },
+    "obs_dispute_agent_3": {
+      "line": 94
+    },
+    "obs_dsp9_gen_e": {
+      "line": 95
+    },
+    "obs_dsp9_gen_d": {
+      "line": 96
+    },
+    "obs_dsp9_tool_c": {
+      "line": 97
+    },
+    "obs_dsp9_tool_e": {
+      "line": 98
+    },
+    "obs_dsp9_gen_s": {
+      "line": 99
+    },
+    "obs_dsp9_tool_o": {
+      "line": 100
+    },
+    "obs_dsp9_span_p": {
+      "line": 101
+    },
+    "obs_dsp9_agent": {
+      "line": 102
+    },
+    "obs_dispute_gen_8": {
+      "line": 103
+    },
+    "obs_dispute_span_6": {
+      "line": 104
+    },
+    "obs_dispute_tool_12": {
+      "line": 105
+    },
+    "obs_dispute_gen_7": {
+      "line": 106
+    },
+    "obs_dispute_tool_11": {
+      "line": 107
+    },
+    "obs_dispute_gen_7b": {
+      "line": 108
+    },
+    "obs_dispute_tool_10": {
+      "line": 109
+    },
+    "obs_dispute_span_5": {
+      "line": 110
+    },
+    "obs_dispute_agent_4": {
+      "line": 111
+    },
+    "obs_dsp8_gen_e": {
+      "line": 112
+    },
+    "obs_dsp8_gen_d": {
+      "line": 113
+    },
+    "obs_dsp8_tool_c": {
+      "line": 114
+    },
+    "obs_dsp8_tool_e": {
+      "line": 115
+    },
+    "obs_dsp8_gen_s": {
+      "line": 116
+    },
+    "obs_dsp8_tool_o": {
+      "line": 117
+    },
+    "obs_dsp8_span_p": {
+      "line": 118
+    },
+    "obs_dsp8_agent": {
+      "line": 119
+    },
+    "obs_dispute_gen_10b": {
+      "line": 120
+    },
+    "obs_dispute_gen_10": {
+      "line": 121
+    },
+    "obs_dispute_tool_15": {
+      "line": 122
+    },
+    "obs_dispute_tool_14": {
+      "line": 123
+    },
+    "obs_dispute_gen_9": {
+      "line": 124
+    },
+    "obs_dispute_tool_13": {
+      "line": 125
+    },
+    "obs_dispute_span_7": {
+      "line": 126
+    },
+    "obs_dispute_agent_5": {
+      "line": 127
+    },
+    "obs_dsp7_gen_e": {
+      "line": 128
+    },
+    "obs_dsp7_gen_d": {
+      "line": 129
+    },
+    "obs_dsp7_tool_c": {
+      "line": 130
+    },
+    "obs_dsp7_tool_e": {
+      "line": 131
+    },
+    "obs_dsp7_gen_s": {
+      "line": 132
+    },
+    "obs_dsp7_tool_o": {
+      "line": 133
+    },
+    "obs_dsp7_span_p": {
+      "line": 134
+    },
+    "obs_dsp7_agent": {
+      "line": 135
+    },
+    "obs_charge_span_2": {
+      "line": 136
+    },
+    "obs_charge_tool_4": {
+      "line": 137
+    },
+    "obs_charge_gen_2": {
+      "line": 138
+    },
+    "obs_charge_tool_3": {
+      "line": 139
+    },
+    "obs_charge_span_1b": {
+      "line": 140
+    },
+    "obs_charge_gen_1": {
+      "line": 141
+    },
+    "obs_charge_tool_2": {
+      "line": 142
+    },
+    "obs_charge_tool_1": {
+      "line": 143
+    },
+    "obs_charge_span_1": {
+      "line": 144
+    },
+    "obs_charge_agent_1": {
+      "line": 145
+    },
+    "obs_dsp6_gen_e": {
+      "line": 146
+    },
+    "obs_dsp6_gen_d": {
+      "line": 147
+    },
+    "obs_dsp6_tool_c": {
+      "line": 148
+    },
+    "obs_dsp6_tool_e": {
+      "line": 149
+    },
+    "obs_dsp6_gen_s": {
+      "line": 150
+    },
+    "obs_dsp6_tool_o": {
+      "line": 151
+    },
+    "obs_dsp6_span_p": {
+      "line": 152
+    },
+    "obs_dsp6_agent": {
+      "line": 153
+    },
+    "obs_charge_tool_8": {
+      "line": 154
+    },
+    "obs_charge_gen_3b": {
+      "line": 155
+    },
+    "obs_charge_tool_7": {
+      "line": 156
+    },
+    "obs_charge_gen_3": {
+      "line": 157
+    },
+    "obs_charge_tool_6": {
+      "line": 158
+    },
+    "obs_charge_span_3b": {
+      "line": 159
+    },
+    "obs_charge_tool_5": {
+      "line": 160
+    },
+    "obs_charge_span_3": {
+      "line": 161
+    },
+    "obs_charge_agent_2": {
+      "line": 162
+    },
+    "obs_charge_tool_13": {
+      "line": 163
+    },
+    "obs_charge_gen_4b": {
+      "line": 164
+    },
+    "obs_charge_tool_12": {
+      "line": 165
+    },
+    "obs_charge_tool_11": {
+      "line": 166
+    },
+    "obs_charge_span_6": {
+      "line": 167
+    },
+    "obs_charge_gen_4": {
+      "line": 168
+    },
+    "obs_charge_tool_10": {
+      "line": 169
+    },
+    "obs_charge_tool_9": {
+      "line": 170
+    },
+    "obs_charge_span_5": {
+      "line": 171
+    },
+    "obs_charge_agent_3": {
+      "line": 172
+    },
+    "obs_charge_span_7c": {
+      "line": 173
+    },
+    "obs_charge_tool_17": {
+      "line": 174
+    },
+    "obs_charge_gen_6b": {
+      "line": 175
+    },
+    "obs_charge_gen_6": {
+      "line": 176
+    },
+    "obs_charge_tool_16": {
+      "line": 177
+    },
+    "obs_charge_gen_5": {
+      "line": 178
+    },
+    "obs_charge_tool_15": {
+      "line": 179
+    },
+    "obs_charge_span_7b": {
+      "line": 180
+    },
+    "obs_charge_tool_14": {
+      "line": 181
+    },
+    "obs_charge_span_7": {
+      "line": 182
+    },
+    "obs_charge_agent_4": {
+      "line": 183
+    },
+    "obs_chg10_tool_nb": {
+      "line": 184
+    },
+    "obs_chg10_gen_n": {
+      "line": 185
+    },
+    "obs_chg10_tool_co": {
+      "line": 186
+    },
+    "obs_chg10_span_bw": {
+      "line": 187
+    },
+    "obs_chg10_tool_r2": {
+      "line": 188
+    },
+    "obs_chg10_gen_s": {
+      "line": 189
+    },
+    "obs_chg10_tool_r1": {
+      "line": 190
+    },
+    "obs_chg10_tool_cl": {
+      "line": 191
+    },
+    "obs_chg10_span_l": {
+      "line": 192
+    },
+    "obs_chg10_agent": {
+      "line": 193
+    },
+    "obs_chg9_tool_nb": {
+      "line": 194
+    },
+    "obs_chg9_gen_n": {
+      "line": 195
+    },
+    "obs_chg9_tool_co": {
+      "line": 196
+    },
+    "obs_chg9_span_bw": {
+      "line": 197
+    },
+    "obs_chg9_tool_r2": {
+      "line": 198
+    },
+    "obs_chg9_span_to": {
+      "line": 199
+    },
+    "obs_chg9_gen_s": {
+      "line": 200
+    },
+    "obs_chg9_tool_r1": {
+      "line": 201
+    },
+    "obs_chg9_tool_cl": {
+      "line": 202
+    },
+    "obs_chg9_span_l": {
+      "line": 203
+    },
+    "obs_chg9_agent": {
+      "line": 204
+    },
+    "obs_chg8_tool_nb": {
+      "line": 205
+    },
+    "obs_chg8_gen_n": {
+      "line": 206
+    },
+    "obs_chg8_tool_co": {
+      "line": 207
+    },
+    "obs_chg8_span_bw": {
+      "line": 208
+    },
+    "obs_chg8_tool_r2": {
+      "line": 209
+    },
+    "obs_chg8_span_to": {
+      "line": 210
+    },
+    "obs_chg8_gen_s": {
+      "line": 211
+    },
+    "obs_chg8_tool_r1": {
+      "line": 212
+    },
+    "obs_chg8_tool_cl": {
+      "line": 213
+    },
+    "obs_chg8_span_l": {
+      "line": 214
+    },
+    "obs_chg8_agent": {
+      "line": 215
+    },
+    "obs_chg7_tool_nb": {
+      "line": 216
+    },
+    "obs_chg7_gen_n": {
+      "line": 217
+    },
+    "obs_chg7_tool_co": {
+      "line": 218
+    },
+    "obs_chg7_span_bw": {
+      "line": 219
+    },
+    "obs_chg7_tool_r2": {
+      "line": 220
+    },
+    "obs_chg7_span_to": {
+      "line": 221
+    },
+    "obs_chg7_gen_s": {
+      "line": 222
+    },
+    "obs_chg7_tool_r1": {
+      "line": 223
+    },
+    "obs_chg7_tool_cl": {
+      "line": 224
+    },
+    "obs_chg7_span_l": {
+      "line": 225
+    },
+    "obs_chg7_agent": {
+      "line": 226
+    },
+    "obs_chg6_tool_nb": {
+      "line": 227
+    },
+    "obs_chg6_gen_n": {
+      "line": 228
+    },
+    "obs_chg6_tool_co": {
+      "line": 229
+    },
+    "obs_chg6_span_bw": {
+      "line": 230
+    },
+    "obs_chg6_tool_r2": {
+      "line": 231
+    },
+    "obs_chg6_gen_s": {
+      "line": 232
+    },
+    "obs_chg6_tool_r1": {
+      "line": 233
+    },
+    "obs_chg6_tool_cl": {
+      "line": 234
+    },
+    "obs_chg6_span_l": {
+      "line": 235
+    },
+    "obs_chg6_agent": {
+      "line": 236
+    },
+    "obs_chg5_tool_nb": {
+      "line": 237
+    },
+    "obs_chg5_gen_n": {
+      "line": 238
+    },
+    "obs_chg5_tool_co": {
+      "line": 239
+    },
+    "obs_chg5_span_bw": {
+      "line": 240
+    },
+    "obs_chg5_tool_r2": {
+      "line": 241
+    },
+    "obs_chg5_gen_s": {
+      "line": 242
+    },
+    "obs_chg5_tool_r1": {
+      "line": 243
+    },
+    "obs_chg5_tool_cl": {
+      "line": 244
+    },
+    "obs_chg5_span_l": {
+      "line": 245
+    },
+    "obs_chg5_agent": {
+      "line": 246
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "agents": [
+    "chargeback-agent",
+    "dispute-agent",
+    "refund-agent",
+    "support-agent"
+  ],
+  "facts": 46,
+  "factsByKind": {
+    "failure": 7,
+    "model_usage": 30,
+    "retry_budget": 1,
+    "side_effect_retry": 8
+  },
+  "groups": [
+    {
+      "environment": "production",
+      "taskKey": "chargeback_task",
+      "traces": 10
+    },
+    {
+      "environment": "production",
+      "taskKey": "dispute_task",
+      "traces": 12
+    },
+    {
+      "environment": "production",
+      "taskKey": "refund_task",
+      "traces": 8
+    }
+  ],
+  "skipped": 0,
+  "traces": 30
+}

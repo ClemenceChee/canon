@@ -1,0 +1,247 @@
+{
+  "data": [
+    {
+      "id": "obs_dispute_tool_12",
+      "traceId": "tr_dispute_4",
+      "projectId": "prj-refunds",
+      "type": "TOOL",
+      "name": "dispute-check",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_dispute_agent_4",
+      "startTime": "2025-08-29T17:00:12.000Z",
+      "endTime": "2025-08-29T17:00:13.000Z",
+      "latency": 1000,
+      "version": "1.0.0",
+      "traceName": "dispute_task",
+      "tags": [
+        "dispute"
+      ],
+      "input": "check dispute status",
+      "output": "won",
+      "metadata": {},
+      "statusMessage": ""
+    },
+    {
+      "id": "obs_dispute_gen_7",
+      "traceId": "tr_dispute_4",
+      "projectId": "prj-refunds",
+      "type": "GENERATION",
+      "name": "dispute-summary",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_dispute_agent_4",
+      "startTime": "2025-08-29T17:00:09.000Z",
+      "endTime": "2025-08-29T17:00:11.000Z",
+      "latency": 2000,
+      "version": "1.0.0",
+      "traceName": "dispute_task",
+      "tags": [
+        "dispute"
+      ],
+      "input": "Summarise R-2004 double charge",
+      "output": "Timeline written.",
+      "metadata": {},
+      "statusMessage": "",
+      "model": "gpt-4o-mini",
+      "internalModelId": "gpt-4o-mini-2024-07-18",
+      "modelParameters": {
+        "temperature": 0.2
+      },
+      "inputPrice": "0.000150",
+      "outputPrice": "0.000600",
+      "totalPrice": "0.000750",
+      "usageDetails": {
+        "input": 800,
+        "output": 220,
+        "total": 1020
+      },
+      "costDetails": {
+        "input": 0.00012,
+        "output": 0.000132,
+        "total": 0.000252
+      }
+    },
+    {
+      "id": "obs_dispute_tool_11",
+      "traceId": "tr_dispute_4",
+      "projectId": "prj-refunds",
+      "type": "TOOL",
+      "name": "evidence-upload",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_dispute_agent_4",
+      "startTime": "2025-08-29T17:00:06.000Z",
+      "endTime": "2025-08-29T17:00:08.000Z",
+      "latency": 2000,
+      "version": "1.0.0",
+      "traceName": "dispute_task",
+      "tags": [
+        "dispute"
+      ],
+      "input": "upload both charge receipts",
+      "output": "3 documents uploaded",
+      "metadata": {},
+      "statusMessage": ""
+    },
+    {
+      "id": "obs_dispute_gen_7b",
+      "traceId": "tr_dispute_4",
+      "projectId": "prj-refunds",
+      "type": "GENERATION",
+      "name": "evidence-notes",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_dispute_agent_4",
+      "startTime": "2025-08-29T17:00:05.000Z",
+      "endTime": "2025-08-29T17:00:06.000Z",
+      "latency": 1000,
+      "version": "1.0.0",
+      "traceName": "dispute_task",
+      "tags": [
+        "dispute"
+      ],
+      "input": "Review receipts",
+      "output": "noted",
+      "metadata": {},
+      "statusMessage": "",
+      "model": "gpt-4o-mini",
+      "internalModelId": "gpt-4o-mini-2024-07-18",
+      "modelParameters": {
+        "temperature": 0.2
+      },
+      "inputPrice": "0.000150",
+      "outputPrice": "0.000600",
+      "totalPrice": "0.000750",
+      "usageDetails": {
+        "input": 800,
+        "output": 220,
+        "total": 1020
+      },
+      "costDetails": {
+        "input": 0.00012,
+        "output": 0.000132,
+        "total": 0.000252
+      }
+    },
+    {
+      "id": "obs_dispute_tool_10",
+      "traceId": "tr_dispute_4",
+      "projectId": "prj-refunds",
+      "type": "TOOL",
+      "name": "dispute-open",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_dispute_agent_4",
+      "startTime": "2025-08-29T17:00:03.000Z",
+      "endTime": "2025-08-29T17:00:05.000Z",
+      "latency": 2000,
+      "version": "1.0.0",
+      "traceName": "dispute_task",
+      "tags": [
+        "dispute"
+      ],
+      "input": "open dispute R-2004",
+      "output": "dispute dp-104 opened",
+      "metadata": {},
+      "statusMessage": ""
+    },
+    {
+      "id": "obs_dispute_span_5",
+      "traceId": "tr_dispute_4",
+      "projectId": "prj-refunds",
+      "type": "SPAN",
+      "name": "policy-lookup",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_dispute_agent_4",
+      "startTime": "2025-08-29T17:00:01.000Z",
+      "endTime": "2025-08-29T17:00:02.000Z",
+      "latency": 1000,
+      "version": "1.0.0",
+      "traceName": "dispute_task",
+      "tags": [
+        "dispute"
+      ],
+      "input": "lookup double-charge policy",
+      "output": "policy v3 found",
+      "metadata": {},
+      "statusMessage": ""
+    },
+    {
+      "id": "obs_dispute_agent_4",
+      "traceId": "tr_dispute_4",
+      "projectId": "prj-refunds",
+      "type": "AGENT",
+      "name": "dispute-agent",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": true,
+      "parentObservationId": null,
+      "startTime": "2025-08-29T17:00:00.000Z",
+      "endTime": "2025-08-29T17:00:18.000Z",
+      "latency": 18000,
+      "version": "1.0.0",
+      "traceName": "dispute_task",
+      "tags": [
+        "dispute"
+      ],
+      "input": "Dispute R-2004 — double charged.",
+      "output": "Dispute won, second charge reversed.",
+      "metadata": {},
+      "statusMessage": "",
+      "sessionId": "sess_dispute_4",
+      "userId": "user_54"
+    },
+    {
+      "id": "obs_dsp8_gen_e",
+      "traceId": "tr_dispute_8",
+      "projectId": "prj-refunds",
+      "type": "GENERATION",
+      "name": "escalation-note",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_dsp8_agent",
+      "startTime": "2025-08-29T14:30:18.000Z",
+      "endTime": "2025-08-29T14:30:20.000Z",
+      "latency": 2000,
+      "version": "1.0.0",
+      "traceName": "dispute_task",
+      "tags": [
+        "dispute"
+      ],
+      "input": "Note escalation ds-6008",
+      "output": "Escalation noted.",
+      "metadata": {},
+      "statusMessage": "",
+      "model": "gpt-4o",
+      "internalModelId": "gpt-4o-2024-08-06",
+      "modelParameters": {
+        "temperature": 0.2
+      },
+      "inputPrice": "0.002500",
+      "outputPrice": "0.010000",
+      "totalPrice": "0.012500",
+      "usageDetails": {
+        "input": 900,
+        "output": 250,
+        "total": 1150
+      },
+      "costDetails": {
+        "input": 0.00225,
+        "output": 0.0025,
+        "total": 0.00475
+      }
+    }
+  ],
+  "meta": {
+    "cursor": "cursor-obs-14"
+  }
+}

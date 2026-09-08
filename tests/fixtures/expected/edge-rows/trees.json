@@ -1,0 +1,45 @@
+{
+  "corrupted": [
+    8
+  ],
+  "skipped": [
+    {
+      "reason": "missing-traceId",
+      "rowId": "obs_edge_notrace_1"
+    },
+    {
+      "reason": "orphan-row",
+      "rowId": "obs_edge_orphan_1"
+    }
+  ],
+  "trees": {
+    "tr_edge_1": {
+      "agentId": "edge-agent",
+      "endTime": "2025-08-15T11:00:10.000Z",
+      "environment": "production",
+      "models": [],
+      "outcome": "success",
+      "rootObservationId": "obs_edge_agent_1",
+      "rowCount": 4,
+      "scoreCount": 2,
+      "startTime": "2025-08-15T11:00:00.000Z",
+      "taskKey": "edge_task",
+      "toolCalls": [
+        "credential-lookup"
+      ]
+    },
+    "tr_edge_2": {
+      "agentId": "edge-agent-2",
+      "endTime": "2025-08-15T08:00:09.000Z",
+      "environment": "production",
+      "models": [],
+      "outcome": "success",
+      "rootObservationId": "obs_edge2_agent_1",
+      "rowCount": 1,
+      "scoreCount": 0,
+      "startTime": "2025-08-15T08:00:00.000Z",
+      "taskKey": "edge_task",
+      "toolCalls": []
+    }
+  }
+}

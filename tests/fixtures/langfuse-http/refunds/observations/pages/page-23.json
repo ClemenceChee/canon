@@ -1,0 +1,211 @@
+{
+  "data": [
+    {
+      "id": "obs_charge_tool_16",
+      "traceId": "tr_charge_4",
+      "projectId": "prj-refunds",
+      "type": "TOOL",
+      "name": "case-open",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_charge_agent_4",
+      "startTime": "2025-08-27T08:30:13.000Z",
+      "endTime": "2025-08-27T08:30:15.000Z",
+      "latency": 2000,
+      "version": "1.0.0",
+      "traceName": "chargeback_task",
+      "tags": [
+        "chargeback"
+      ],
+      "input": "open case cb-5004",
+      "output": "case CA-80 opened",
+      "metadata": {},
+      "statusMessage": ""
+    },
+    {
+      "id": "obs_charge_gen_5",
+      "traceId": "tr_charge_4",
+      "projectId": "prj-refunds",
+      "type": "GENERATION",
+      "name": "case-summary",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_charge_agent_4",
+      "startTime": "2025-08-27T08:30:09.000Z",
+      "endTime": "2025-08-27T08:30:12.000Z",
+      "latency": 3000,
+      "version": "1.0.0",
+      "traceName": "chargeback_task",
+      "tags": [
+        "chargeback"
+      ],
+      "input": "Summarise cb-5004",
+      "output": "Summary written.",
+      "metadata": {},
+      "statusMessage": "",
+      "model": "gpt-4o",
+      "internalModelId": "gpt-4o-2024-08-06",
+      "modelParameters": {
+        "temperature": 0.2
+      },
+      "inputPrice": "0.002500",
+      "outputPrice": "0.010000",
+      "totalPrice": "0.012500",
+      "usageDetails": {
+        "input": 900,
+        "output": 250,
+        "total": 1150
+      },
+      "costDetails": {
+        "input": 0.00225,
+        "output": 0.0025,
+        "total": 0.00475
+      }
+    },
+    {
+      "id": "obs_charge_tool_15",
+      "traceId": "tr_charge_4",
+      "projectId": "prj-refunds",
+      "type": "TOOL",
+      "name": "charge-reversal",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_charge_agent_4",
+      "startTime": "2025-08-27T08:30:05.000Z",
+      "endTime": "2025-08-27T08:30:08.000Z",
+      "latency": 3000,
+      "version": "1.0.0",
+      "traceName": "chargeback_task",
+      "tags": [
+        "chargeback"
+      ],
+      "input": "reverse chg-5004",
+      "output": "reversed (id rev_104)",
+      "metadata": {},
+      "statusMessage": ""
+    },
+    {
+      "id": "obs_charge_span_7b",
+      "traceId": "tr_charge_4",
+      "projectId": "prj-refunds",
+      "type": "SPAN",
+      "name": "risk-check",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_charge_agent_4",
+      "startTime": "2025-08-27T08:30:04.000Z",
+      "endTime": "2025-08-27T08:30:05.000Z",
+      "latency": 1000,
+      "version": "1.0.0",
+      "traceName": "chargeback_task",
+      "tags": [
+        "chargeback"
+      ],
+      "input": "risk check cb-5004",
+      "output": "low risk",
+      "metadata": {},
+      "statusMessage": ""
+    },
+    {
+      "id": "obs_charge_tool_14",
+      "traceId": "tr_charge_4",
+      "projectId": "prj-refunds",
+      "type": "TOOL",
+      "name": "charge-lookup",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_charge_agent_4",
+      "startTime": "2025-08-27T08:30:02.000Z",
+      "endTime": "2025-08-27T08:30:04.000Z",
+      "latency": 2000,
+      "version": "1.0.0",
+      "traceName": "chargeback_task",
+      "tags": [
+        "chargeback"
+      ],
+      "input": "details chg-5004",
+      "output": "amount 76.00",
+      "metadata": {},
+      "statusMessage": ""
+    },
+    {
+      "id": "obs_charge_span_7",
+      "traceId": "tr_charge_4",
+      "projectId": "prj-refunds",
+      "type": "SPAN",
+      "name": "ledger-lookup",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_charge_agent_4",
+      "startTime": "2025-08-27T08:30:01.000Z",
+      "endTime": "2025-08-27T08:30:02.000Z",
+      "latency": 1000,
+      "version": "1.0.0",
+      "traceName": "chargeback_task",
+      "tags": [
+        "chargeback"
+      ],
+      "input": "lookup chg-5004",
+      "output": "found",
+      "metadata": {},
+      "statusMessage": ""
+    },
+    {
+      "id": "obs_charge_agent_4",
+      "traceId": "tr_charge_4",
+      "projectId": "prj-refunds",
+      "type": "AGENT",
+      "name": "chargeback-agent",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": true,
+      "parentObservationId": null,
+      "startTime": "2025-08-27T08:30:00.000Z",
+      "endTime": "2025-08-27T08:30:22.000Z",
+      "latency": 22000,
+      "version": "1.0.0",
+      "traceName": "chargeback_task",
+      "tags": [
+        "chargeback"
+      ],
+      "input": "Handle chargeback cb-5004.",
+      "output": "Reversed, opened, notified.",
+      "metadata": {},
+      "statusMessage": "",
+      "sessionId": "sess_charge_4",
+      "userId": "user_64"
+    },
+    {
+      "id": "obs_chg10_tool_nb",
+      "traceId": "tr_charge_10",
+      "projectId": "prj-refunds",
+      "type": "TOOL",
+      "name": "notify-bank",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_chg10_agent",
+      "startTime": "2025-08-27T07:15:17.000Z",
+      "endTime": "2025-08-27T07:15:19.000Z",
+      "latency": 2000,
+      "version": "1.0.0",
+      "traceName": "chargeback_task",
+      "tags": [
+        "chargeback"
+      ],
+      "input": "notify bank of reversal chg-5010",
+      "output": "bank notified",
+      "metadata": {},
+      "statusMessage": ""
+    }
+  ],
+  "meta": {
+    "cursor": "cursor-obs-23"
+  }
+}

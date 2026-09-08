@@ -1,0 +1,215 @@
+{
+  "data": [
+    {
+      "id": "obs_refund7_agent",
+      "traceId": "tr_refund_7",
+      "projectId": "prj-refunds",
+      "type": "AGENT",
+      "name": "refund-agent",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": true,
+      "parentObservationId": null,
+      "startTime": "2025-08-31T20:30:00.000Z",
+      "endTime": "2025-08-31T20:30:13.000Z",
+      "latency": 13000,
+      "version": "1.0.0",
+      "traceName": "refund_task",
+      "tags": [
+        "refund"
+      ],
+      "input": "Handle refund R-7007.",
+      "output": "Refund issued to customer via standard flow.",
+      "metadata": {},
+      "statusMessage": "",
+      "sessionId": "sess_refund_7",
+      "userId": "user_71",
+      "samplingWeight": 0.5
+    },
+    {
+      "id": "obs_refund8_notify",
+      "traceId": "tr_refund_8",
+      "projectId": "prj-refunds",
+      "type": "TOOL",
+      "name": "notify-customer",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_refund8_agent",
+      "startTime": "2025-08-31T19:40:11.000Z",
+      "endTime": "2025-08-31T19:40:12.000Z",
+      "latency": 1000,
+      "version": "1.0.0",
+      "traceName": "refund_task",
+      "tags": [
+        "refund"
+      ],
+      "input": "notify customer of refund R-7008",
+      "output": "email sent",
+      "metadata": {},
+      "statusMessage": ""
+    },
+    {
+      "id": "obs_refund8_gen",
+      "traceId": "tr_refund_8",
+      "projectId": "prj-refunds",
+      "type": "GENERATION",
+      "name": "refund-summary",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_refund8_agent",
+      "startTime": "2025-08-31T19:40:08.000Z",
+      "endTime": "2025-08-31T19:40:10.000Z",
+      "latency": 2000,
+      "version": "1.0.0",
+      "traceName": "refund_task",
+      "tags": [
+        "refund"
+      ],
+      "input": "Summarise refund R-7008 outcome",
+      "output": "Refund issued via standard flow.",
+      "metadata": {},
+      "statusMessage": "",
+      "model": "gpt-4o-mini",
+      "internalModelId": "gpt-4o-mini-2024-07-18",
+      "modelParameters": {
+        "temperature": 0.2
+      },
+      "inputPrice": "0.000150",
+      "outputPrice": "0.000600",
+      "totalPrice": "0.000750",
+      "usageDetails": {
+        "input": 800,
+        "output": 220,
+        "total": 1020
+      },
+      "costDetails": {
+        "input": 0.00012,
+        "output": 0.000132,
+        "total": 0.000252
+      }
+    },
+    {
+      "id": "obs_refund8_tool",
+      "traceId": "tr_refund_8",
+      "projectId": "prj-refunds",
+      "type": "TOOL",
+      "name": "refund-standard",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_refund8_agent",
+      "startTime": "2025-08-31T19:40:03.000Z",
+      "endTime": "2025-08-31T19:40:06.000Z",
+      "latency": 3000,
+      "version": "1.0.0",
+      "traceName": "refund_task",
+      "tags": [
+        "refund"
+      ],
+      "input": "refund order O-7008",
+      "output": "refund scheduled (id rf_7008)",
+      "metadata": {},
+      "statusMessage": ""
+    },
+    {
+      "id": "obs_refund8_span",
+      "traceId": "tr_refund_8",
+      "projectId": "prj-refunds",
+      "type": "SPAN",
+      "name": "post-refund-check",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_refund8_agent",
+      "startTime": "2025-08-31T19:40:01.000Z",
+      "endTime": "2025-08-31T19:40:02.000Z",
+      "latency": 1000,
+      "version": "1.0.0",
+      "traceName": "refund_task",
+      "tags": [
+        "refund"
+      ],
+      "input": "verify refund R-7008",
+      "output": "ok",
+      "metadata": {},
+      "statusMessage": ""
+    },
+    {
+      "id": "obs_refund8_agent",
+      "traceId": "tr_refund_8",
+      "projectId": "prj-refunds",
+      "type": "AGENT",
+      "name": "refund-agent",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": true,
+      "parentObservationId": null,
+      "startTime": "2025-08-31T19:40:00.000Z",
+      "endTime": "2025-08-31T19:40:13.000Z",
+      "latency": 13000,
+      "version": "1.0.0",
+      "traceName": "refund_task",
+      "tags": [
+        "refund"
+      ],
+      "input": "Handle refund R-7008.",
+      "output": "Refund issued to customer via standard flow.",
+      "metadata": {},
+      "statusMessage": "",
+      "sessionId": "sess_refund_8",
+      "userId": "user_72",
+      "samplingWeight": 0.5
+    },
+    {
+      "id": "obs_refund_span_3b",
+      "traceId": "tr_refund_3",
+      "projectId": "prj-refunds",
+      "type": "SPAN",
+      "name": "post-refund-check",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_refund_agent_3",
+      "startTime": "2025-08-31T18:05:15.000Z",
+      "endTime": "2025-08-31T18:05:16.000Z",
+      "latency": 1000,
+      "version": "1.0.0",
+      "traceName": "refund_task",
+      "tags": [
+        "refund"
+      ],
+      "input": "verify refund posted",
+      "output": "posted",
+      "metadata": {},
+      "statusMessage": ""
+    },
+    {
+      "id": "obs_refund_tool_6",
+      "traceId": "tr_refund_3",
+      "projectId": "prj-refunds",
+      "type": "TOOL",
+      "name": "notify-customer",
+      "level": "INFO",
+      "environment": "production",
+      "isRootObservation": false,
+      "parentObservationId": "obs_refund_agent_3",
+      "startTime": "2025-08-31T18:05:14.000Z",
+      "endTime": "2025-08-31T18:05:15.000Z",
+      "latency": 1000,
+      "version": "1.0.0",
+      "traceName": "refund_task",
+      "tags": [
+        "refund"
+      ],
+      "input": "notify R-1003 outcome",
+      "output": "customer notified",
+      "metadata": {},
+      "statusMessage": ""
+    }
+  ],
+  "meta": {
+    "cursor": "cursor-obs-3"
+  }
+}

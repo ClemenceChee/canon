@@ -1,0 +1,13 @@
+node_modules/
+dist/
+coverage/
+.env
+.env.*
+*.log
+.factory-work/
+qa_reports/
+review_reports/
+trace.db
+.research-*/
+.canon/
+.npm-cache/
